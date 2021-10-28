@@ -1,0 +1,29 @@
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+    &__item{
+        font-weight: $font-weight-bolder;
+        transition: $transition-base;
+        filter: opacity(.4);
+        padding: 0 18px;
+
+        &--active, &:hover{
+            color: $black;
+            filter: opacity(1);
+            text-decoration: none;
+        }
+
+        &_cabinet{
+            filter: opacity(1);
+        }
+    }
+    &__sep{
+        width: 1px;
+        height: 32px;
+        background-color: rgba(26, 26, 26, 0.2);
+
+        margin: 0 26px;
+    }
+}

@@ -1,0 +1,21 @@
+.content_titulary{
+    padding-top: map-get($map: $spacers, $key: 0);
+    padding-bottom: map-get($map: $spacers, $key: 4);
+
+    &__heading{
+        font-weight: $font-weight-bold;
+    }
+    &__offer{
+        width: 400px;
+        max-width: 100%;
+    }
+    &__image{
+        display: block;
+        margin-left: auto;
+
+        width: 500px;
+        height: auto;
+
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Factor A';
+    src: url('../fonts/FactorALight-Regular.eot');
+    src: local('Factor A Light Regular'), local('FactorALight-Regular'),
+        url('../fonts/FactorALight-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FactorALight-Regular.woff2') format('woff2'),
+        url('../fonts/FactorALight-Regular.woff') format('woff'),
+        url('../fonts/FactorALight-Regular.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Factor A';
+    src: url('../fonts/FactorA-Regular.eot');
+    src: local('Factor A Regular'), local('FactorA-Regular'),
+        url('../fonts/FactorA-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FactorA-Regular.woff2') format('woff2'),
+        url('../fonts/FactorA-Regular.woff') format('woff'),
+        url('../fonts/FactorA-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Factor A';
+    src: url('../fonts/FactorAMedium-Regular.eot');
+    src: local('Factor A Medium Regular'), local('FactorAMedium-Regular'),
+        url('../fonts/FactorAMedium-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FactorAMedium-Regular.woff2') format('woff2'),
+        url('../fonts/FactorAMedium-Regular.woff') format('woff'),
+        url('../fonts/FactorAMedium-Regular.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Factor A';
+    src: url('../fonts/FactorA-Bold.eot');
+    src: local('Factor A Bold'), local('FactorA-Bold'),
+        url('../fonts/FactorA-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FactorA-Bold.woff2') format('woff2'),
+        url('../fonts/FactorA-Bold.woff') format('woff'),
+        url('../fonts/FactorA-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}

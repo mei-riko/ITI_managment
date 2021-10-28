@@ -1,0 +1,17 @@
+.content_strategy{
+    background: $grey;
+
+    &__offer{
+        width: 610px;
+        max-width: 100%;
+    }
+    &__image{
+        display: block;
+        margin-left: auto;
+
+        width: 390px;
+        height: auto;
+
+        max-width: 100%;
+    }
+}

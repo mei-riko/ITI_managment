@@ -1,25 +1,31 @@
 $white                : #ffffff;
-$black                : #000000;
-$action               : #ce002b;
+$black                : #1A1A1A;
 
+$green1               : #00C172;
+$green2               : #00B560;
+$green3               : #009657;
+$green4               : #016243;
 
-$light-grey           : #FCFBFA;
-$grey                 : #777777;
-$dark-grey            : #3a3a3a;
+$light-grey           : #F6F6F6;
+$grey                 : #EFEFEF;
+
+$action               : $green1;
 
 $body-color           : $black;
-$body-bg              : #F9F9F9;
+$body-bg              : $white;
 
 $border-color         : #d7d7d8;
-$border-radius        : 6px;
+$border-radius        : 12px;
 
 $link-color           : $black !default;
-$link-hover-color     : $action !default;
+$link-hover-color     : $green1 !default;
 $link-decoration      : none !default;
 $link-hover-decoration: underline !default;
 
+$transition-base      : 0.3s;
+
 $grid-breakpoints: (
-  xs: 420px,
+  xs: 375px,
   sm: 576px,
   md: 768px,
   lg: 1024px,
@@ -32,63 +38,72 @@ $container-max-widths: (
   md: 0px,
   lg: 0px,
   xl: 0px,
+  hd: 1280px,
 ) !default;
 
 
 $font-weight          : 400;
-$font-weight-bolder   : 600;
+$font-weight-bolder   : 500;
 $font-weight-bold     : 700;
 
-$font-weight-heading: $font-weight-bold !default;
 $dt-font-weight:      $font-weight-bold !default;
 
-$line-height          : 1.7;
+$line-height          : 1.6;
 $line-height-base     : 1.4;
-$line-height-heading  : 1.2;
 
 $font-size-base       : 1rem;
 $font-weight-base     : $font-weight;
 
-$font-family-heading  : "Inter", "Helvetica Neue", Arial,  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$font-family-base     : "Inter", "Helvetica Neue", Arial,  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-heading  : "Factor A", "Helvetica Neue", Arial,  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-base     : "Factor A", "Helvetica Neue", Arial,  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,   "Liberation Mono",   "Courier New",    monospace !default;
 
 $font-size: (
   // small
-  xs: 0px,
+  xs: 12px,
   // btn
-  sm: 0px,
+  sm: 14px,
   // main
-  md: 14px,
+  md: 18px,
   // lead
-  lg: 0px
+  lg: 24px
+) !default;
+
+$heading: (
+  h1: 72px,
+  h2: 48px,
+  h3: 38px,
+  h4: 24px,
+  h5: 20px,
+  h6: 18px,
 ) !default;
 
 $letter-spacing       : 0.04em;
 
 $grid-columns         : 12 !default;
-$grid-gutter-width    : 30px !default;
-$spacer-gutter        : 15px !default;
+$grid-gutter-width    : 40px !default;
 
-$spacer : 30px!default;
+$spacer-gutter        : 12px !default;
+
+$spacer : 24px!default;
 $spacers: ()  !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $spacers: map-merge(
   (
     0: 0,
-    1: $spacer/2,       // 15px
-    2: $spacer,         // 30px
-    3: (3*$spacer)/2,   // 45px
-    4: $spacer * 2,     // 60px
-    5: $spacer * 3      // 90px
+    1: 32px,
+    2: 44px,
+    3: 56px,
+    4: 100px,
+    5: 120px
   ),
   $spacers
 );
 
-$headings-margin-bottom: $spacer / 2 !default;
+$headings-margin-bottom: $spacer !default;
 $headings-font-family  : null !default;
-$headings-font-weight  : 400 !default;
-$headings-line-height  : 1.2 !default;
+$headings-font-weight  : 500 !default;
+$headings-line-height  : 1.0 !default;
 $headings-color        : null !default;
 
 $paragraph-margin-bottom: $spacer-gutter !default;

@@ -19,3 +19,5 @@ $(function() {
 });
 
 import './mouseup';
+import '../blocks/tabs/tabs';
+import '../items/input/input';

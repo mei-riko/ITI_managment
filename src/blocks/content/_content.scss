@@ -1,0 +1,6 @@
+.content{
+    padding: map-get($map: $spacers, $key: 5) 0;
+    &__offer{
+        font-size: map-get($map: $font-size, $key: lg);
+    }
+}

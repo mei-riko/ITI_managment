@@ -1,1 +1,23 @@
-.main{}
+@import "../styles/helpers/variables";
+
+@import "../items/nav/nav";
+
+@import "../items/btn/btn";
+@import "../items/btn/btn_action";
+
+@import "../items/form/form";
+@import "../items/form/form_strategy";
+
+@import "../items/input/input";
+
+@import "../items/info/info";
+
+@import "../blocks/header/header.scss";
+@import "../blocks/footer/footer.scss";
+
+@import "../blocks/content/content";
+@import "../blocks/content/content_titulary";
+@import "../blocks/content/content_trust";
+@import "../blocks/content/content_strategy";
+
+@import "../blocks/tabs/tabs";

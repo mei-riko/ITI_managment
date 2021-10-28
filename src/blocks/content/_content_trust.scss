@@ -1,0 +1,21 @@
+.content_trust{
+    background: $light-grey;
+
+    &__heading{
+        font-weight: $font-weight-bold;
+        margin-bottom: $spacer-gutter;
+    }
+    &__link{
+        font-weight: $font-weight-bold;
+        color: $green1;
+    }
+    &__image{
+        display: block;
+        margin-left: auto;
+
+        width: 450px;
+        height: auto;
+
+        max-width: 100%;
+    }
+}
