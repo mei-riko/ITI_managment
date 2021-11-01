@@ -1,0 +1,30 @@
+.list{
+    &__item{
+        position: relative;
+        padding-left: 28px;
+
+        margin-bottom: map-get($map: $spacers, $key: 2);
+
+        &:before{
+            position: absolute;
+            top: .25em;
+            left: 0;
+
+            content: '';
+            display: block;
+
+            width: $spacer-gutter;
+            height: $spacer-gutter;
+            border-radius: 50%;
+
+            background: $green1;
+        }
+    }
+    &__item-title{
+        font-weight: $font-weight-bold;
+        margin-bottom: $spacer-gutter;
+    }
+    &__item-content{
+        filter: opacity(0.8);
+    }
+}

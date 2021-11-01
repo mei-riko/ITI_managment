@@ -1,0 +1,93 @@
+extends ../blocks/main.pug
+
+block variables
+    - var pageTitle = "Inside Page"
+    link(rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css")
+block content
+    section.content.content_titulary
+        .container 
+            .row.align-items-center
+                .col-6.col-sm-12 
+                    h1.content_titulary__heading Название стратегии
+                    p.content__offer.mb-2 это инвестиции в паи биржевого фонда с портфелем из акций ТОП-300 крупнейших компаний Китая, в том числе через ETF.
+                    a.btn.btn_action(href="#") Описание стратегии
+                .col-6.col-sm-12 
+                    img.content_titulary__image(src="./img/default.png")
+    section.content.content_props
+        .container
+            .props
+                .props__item
+                    .props__title +24%
+                    .props__offer Ожидаемая <br>доходность
+                .props__item
+                    .props__title 5 лет
+                    .props__offer Минимальный <br>срок вложений
+                .props__item
+                    .props__title 100 000 ₽
+                    .props__offer Минимальная <br>сумма вложения
+                .props__item
+                    .props__title 1 млн ₽
+                    .props__offer Возможные <br>суммы взносов
+                .props__item
+                    .props__title Рубли РФ
+                    .props__offer Валюта <br>вложений
+    section.content.content_about.bg-light-grey
+        .container
+            .row
+                .col-9.col-sm-12
+                    p.h2.mb-2 Описание стратегии
+                    p.content__offer Стратегия «Название стратегии» — это инвестиции в паи биржевого фонда с портфелем из акций ТОП-300 крупнейших компаний Китая, в том числе через ETF. Экономика Китая — крупнейшая в мире по ППС, с мощной промышленностью и передовыми новейшими технологиями. 
+        .tabs
+            .content_about__nav.mt-3
+                .container
+                        .tabs__nav
+                            .tabs__item.tabs__item_inside.tabs__item_inside--active(data-content="#tab1content") Условия стратегии
+                            .tabs__item.tabs__item_inside(data-content="#tab2content") Требования к инвестору
+                            .tabs__item.tabs__item_inside(data-content="#tab3content") Документы
+                            .tabs__item.tabs__item_inside(data-content="#tab4content") Реквизиты
+            .content_about__content
+                .container
+                    .tabs__content.tabs__content--show.tabs__content--active#tab1content
+                    .row 
+                        .col-9.col-sm-12
+                            .list
+                                .list__item
+                                    .list__item-title Вознаграждение за размещение
+                                    .list__item-content В размере 4% от стоимости Активов, в течение 30 календарных дней с даты зачисления Активов, переданного в доверительное управление.
+                                .list__item
+                                    .list__item-title Описание стратегии управления
+                                    .list__item-content Для предпочитающих умеренный риск портфель (до 70 % портфеля) из государственных ценных бумаг с фиксированной доходностью
+                                .list__item
+                                    .list__item-title Ожидаемая доходность
+                                    .list__item-content До 14%
+                                .list__item
+                                    .list__item-title Частичное изъятие (вывод) Активов в период действия Договора
+                                    .list__item-content Не более 40%. Неснижаемый остаток в размере 100 000 рублей РФ.
+                                .list__item
+                                    .list__item-title Досрочное прекращение Договора ДУ по инициативе Клиента
+                                    .list__item-content Предусмотрено. Неустойка не взымается.
+                                .list__item
+                                    .list__item-title Досрочное прекращение Договора ДУ по инициативе Клиента
+                                    .list__item-content 14 календарных дней с даты передачи первоначального денежного взноса.
+                    .tabs__content#tab2content
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et vitae nunc, venenatis vestibulum. Sit faucibus integer enim, sodales ac. Faucibus malesuada nisl orci egestas at in felis, purus, gravida. In pulvinar nunc enim mi. Cras porta tempus ultricies eros, mauris.
+                        p Commodo in rhoncus erat cursus. Est dui egestas sed amet ut bibendum. Sed a magna eget arcu in nunc dui, lectus. Et tristique arcu amet sed vel non, lorem faucibus tortor. Quam mollis vulputate commodo, arcu. Ultricies augue faucibus odio in. Mattis elementum pellentesque pellentesque diam diam est. Lacinia et vel bibendum vel leo porttitor lectus erat quis. At nisl, pretium amet odio viverra nibh. Ornare dignissim justo mattis sed vulputate iaculis viverra cras id.
+                    .tabs__content#tab3content
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et vitae nunc, venenatis vestibulum. Sit faucibus integer enim, sodales ac. Faucibus malesuada nisl orci egestas at in felis, purus, gravida. In pulvinar nunc enim mi. Cras porta tempus ultricies eros, mauris.
+                    .tabs__content#tab4content
+                            p Commodo in rhoncus erat cursus. Est dui egestas sed amet ut bibendum. Sed a magna eget arcu in nunc dui, lectus. Et tristique arcu amet sed vel non, lorem faucibus tortor. Quam mollis vulputate commodo, arcu. Ultricies augue faucibus odio in. Mattis elementum pellentesque pellentesque diam diam est. Lacinia et vel bibendum vel leo porttitor lectus erat quis. At nisl, pretium amet odio viverra nibh. Ornare dignissim justo mattis sed vulputate iaculis viverra cras id.
+    include ../items/slider/slider.pug
+    section.content.content_strategy
+        .container 
+            .row.align-items-center
+                .col-7.col-sm-12 
+                    h3.text-bold Поможем выбрать стратегию
+                    p.content_strategy__offer.mb-2 Если вы не&nbsp;знаете, какую стратегию выбрать, или вы&nbsp;хотите узнать, 
+                        | как мы&nbsp;работаем  — с&nbsp;удовольствием всё расскажем. 
+                    form.form.form_strategy
+                        input.input(type="tel" data-input="phone" placeholder="Inter phone number")
+                        button.btn.btn_action.form_strategy__btn Подобрать стратегию
+                .col-5.col-sm-12
+                    img.content_strategy__image(src="./img/strategy.png")
+block footer
+    script(src="https://unpkg.com/swiper@7/swiper-bundle.min.js")

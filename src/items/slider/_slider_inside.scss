@@ -1,0 +1,8 @@
+.slider_inside{
+    padding-top: 2*map-get($map: $spacers, $key: 3);
+    transform: translateY(-48px);
+
+    &.swiper-initialized{
+        overflow: visible;
+    }
+}

@@ -1,6 +1,27 @@
 - var tel = {'item':"8 800 600 44 22",'link':"tel:88006004422"}
 - var email = {'item':"demo@demo.ru",'link':"mailto:demo@demo.ru"}
 
+mixin item(title, subtitle, percent, period, content)
+    .item
+        .item__open-modal 
+        .item__risk 
+            svg.item__risk-icon(width="76" height="13" viewBox="0 0 76 13" fill="none" xmlns="http://www.w3.org/2000/svg")
+                circle.item__risk-active(cx="6" cy="6.49976" r="6")
+                circle.item__risk-active(cx="22" cy="6.49976" r="6")
+                circle.item__risk-active(cx="38" cy="6.49976" r="6")
+                circle.item__risk-disabled(cx="54" cy="6.49976" r="6")
+                circle.item__risk-disabled(cx="70" cy="6.49976" r="6")
+            .item__risk-title Уровень риска
+        .item__subtitle=subtitle 
+        .item__title=title
+        .item__stats
+            .item__stats-item
+                .item__stats-title=percent
+                .item__stats-offer Годовых в рублях
+            .item__stats-item
+                .item__stats-title=period
+                .item__stats-offer Срок вложений
+        .item__content=content
 
 block variables
 html(lang="ru")
@@ -22,6 +43,7 @@ html(lang="ru")
         include ./header/header.pug
         block content
         include ./footer/footer.pug
+        block footer
         link(href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css", rel="stylesheet")
         script(src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js")
         script(src="./js/jquery.inputmask.min.js")

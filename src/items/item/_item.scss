@@ -1,0 +1,77 @@
+.item{
+    position: relative;
+    padding: $grid-gutter-width $grid-gutter-width 72px;
+    
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
+    width: 100%;
+
+    box-sizing: border-box;
+
+    border-radius: $border-radius;
+    background: $white url('../icon/svg-bg-strategy.png') no-repeat right bottom / cover;
+
+    &__risk{
+        display: grid;
+        grid-template-columns: 80px auto;
+        grid-gap: $spacer-gutter;
+        align-items: center;
+
+        margin-bottom: map-get($map: $spacers, $key: 3);
+
+        &-title{
+            font-size: map-get($map: $font-size, $key: sm);
+            color: $black;
+            filter: opacity(.4);
+        }
+        &-icon{
+            width: 100%;
+        }
+        &-active{
+            fill: $green1;
+        }
+        &-disabled{
+            fill: $black;
+            filter: opacity(.2);
+        }
+    }
+    &__subtitle{
+        text-transform: uppercase;
+        color: $black;
+        filter: opacity(.6);
+
+        font-size: map-get($map: $font-size, $key: xs);
+        margin-bottom: $spacer-gutter;
+    }
+    &__title{
+        font-size: map-get($map: $heading, $key: h3);
+        line-height: $headings-line-height;
+        font-weight: $headings-font-weight;
+
+        height: 2*map-get($map: $heading, $key: h3);
+        margin-bottom: map-get($map: $spacers, $key: 3);
+    }
+    &__stats{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: $grid-gutter-width/2;
+
+        margin-bottom: map-get($map: $spacers, $key: 3);
+
+        &-title{
+            font-size: map-get($map: $heading, $key: h3);
+            line-height: $headings-line-height;
+            font-weight: $headings-font-weight;
+            color: $green1;
+
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        &-offer{
+            font-size: map-get($map: $font-size, $key: sm);
+            color: $black;
+            filter: opacity(.4);
+        }
+    }
+}

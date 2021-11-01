@@ -7,7 +7,12 @@ $(document).on("click", ".tabs .tabs__item", function(){
 
     let tabContent = $(".tabs__content" + tabContentId);
 
-    tabParent.find(".tabs__item").removeClass("tabs__item--active").eq($(this).index()).addClass("tabs__item--active");
+    if( tabParent.find(".tabs__item").hasClass("tabs__item_inside") ){
+        tabParent.find(".tabs__item").removeClass("tabs__item_inside--active").eq($(this).index()).addClass("tabs__item_inside--active");
+    }else{
+        tabParent.find(".tabs__item").removeClass("tabs__item--active").eq($(this).index()).addClass("tabs__item--active");
+    }
+
     tabContainer.find(".tabs__content").removeClass("tabs__content--show").removeClass("tabs__content--active");
     
     tabContent.addClass("tabs__content--active");

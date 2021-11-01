@@ -1,0 +1,48 @@
+.slider{
+    position: relative;
+
+    &__grid{
+        &:not(.swiper-wrapper){
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: $grid-gutter-width/2;
+        }
+    }
+    &__arrow{
+        position: absolute;
+        top: 0;
+
+        cursor: pointer;
+
+        circle, path{
+            transition: $transition-base;
+        }
+
+        &:not(.swiper-button-disabled):hover{
+            circle {
+                stroke: $green1;
+                fill: $green1;
+            }
+            path{
+                fill: $white;
+            }
+        }
+
+        &.swiper-button-disabled{
+            filter: opacity(.2);
+            cursor: no-drop;
+        }
+    }
+    &__arrow_next{
+        right: 0;
+        // transform: translateY(-100%);
+    }
+    &__arrow_prev{
+        right: 12px;
+        transform: translateX(-100%);
+    }
+    &__slide{
+        display: flex;
+        align-items: stretch;
+    }
+}

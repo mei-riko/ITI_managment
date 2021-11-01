@@ -1,8 +1,8 @@
 extends ../blocks/main.pug
 
 block variables
-    - var pageTitle = "Landing Page"
-    
+    - var pageTitle = "Index Page"
+    link(rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css")
 block content
     section.content.content_titulary
         .container 
@@ -13,20 +13,7 @@ block content
                     a.btn.btn_action(href="#") Подобрать стратегию
                 .col-6.col-sm-12 
                     img.content_titulary__image(src="./img/titulary.png")
-    section.content.content_trust 
-        .container 
-            h2 Доверительное управление
-            .tabs.mt-3
-                .tabs__nav.mb-3
-                    .tabs__item.tabs__item--active(data-content="#tab1") Консервативный
-                    .tabs__item(data-content="#tab2") Умеренный
-                    .tabs__item(data-content="#tab3") Доходный
-                .tabs__content.tabs__content--show.tabs__content--active#tab1
-                    p Консервативный
-                .tabs__content#tab2
-                    p Умеренный
-                .tabs__content#tab3
-                    p Доходный
+    include ../items/slider/slider.pug
     section.content.content_strategy
         .container 
             .row.align-items-center
@@ -60,7 +47,7 @@ block content
                         img.info__image(src="./icon/plus.svg")
                         p.info__title Преимущества
                         p.info__content Доверительное управление — это возможность заработать больше, чем при открытии банковского вклада или вложении в паевые фонды. Вам не нужно вникать в тонкости инвестиционной деятельности. Индивидуальный подход и широкие возможности для инвестиций, а значит, более высокий доход.
-    section.content.content_trust 
+    section.content.content_trust.bg-light-grey 
         .container 
             .row.align-items-center
                 .col-6.col-sm-12 
@@ -69,4 +56,6 @@ block content
                     p.content__offer.mb-1 ITI Менеджмент — современная управляющая компания. Наша специализация — финансовые и инвестиционные услуги физическим лицам. Мы профессионально и эффективно управляем вашими средствами, помогая вам стабильно увеличивать доход. 
                     a.content_trust__link(href="#") Подробнее
                 .col-6.col-sm-12
-                    img.content_trust__image(src="./img/company.png")
+                    img.content_trust__image(src="./img/default.png")
+block footer
+    script(src="https://unpkg.com/swiper@7/swiper-bundle.min.js")

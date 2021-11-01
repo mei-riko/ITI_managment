@@ -7,10 +7,18 @@
 
 @import "../items/form/form";
 @import "../items/form/form_strategy";
-
 @import "../items/input/input";
 
+// Info Item
 @import "../items/info/info";
+// Strategy Card
+@import "../items/item/item";
+
+@import "../items/list/list";
+
+@import "../items/slider/swiper";
+@import "../items/slider/slider";
+@import "../items/slider/slider_inside";
 
 @import "../blocks/header/header.scss";
 @import "../blocks/footer/footer.scss";
@@ -18,6 +26,10 @@
 @import "../blocks/content/content";
 @import "../blocks/content/content_titulary";
 @import "../blocks/content/content_trust";
+@import "../blocks/content/content_has-slider";
 @import "../blocks/content/content_strategy";
+@import "../blocks/content/content_props";
+@import "../blocks/content/content_about";
 
 @import "../blocks/tabs/tabs";
+@import "../blocks/props/props"

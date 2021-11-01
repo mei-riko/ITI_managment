@@ -4,6 +4,7 @@
     align-items: center;
     
     &__item{
+        font-size: 16px;
         font-weight: $font-weight-bolder;
         transition: $transition-base;
         filter: opacity(.4);

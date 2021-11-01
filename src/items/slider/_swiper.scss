@@ -1,0 +1,29 @@
+.swiper {
+    width: 100%;
+    height: auto;
+
+    .swiper-wrapper,
+    .swiper-container{
+        height: auto;
+        height: intrinsic;
+    }
+
+    .swiper-slide {
+        width: auto;
+        height: auto;
+        height: intrinsic;
+
+        // filter: opacity( 0.5 );
+
+        // &.swiper-slide-next{
+        //     filter: opacity( 1 );
+
+        //     & + .swiper-slide{
+        //         filter: opacity( 1 );
+        //     }
+        // }
+        // &.swiper-slide-active{
+        //     filter: opacity( 1 );
+        // }
+    }
+}

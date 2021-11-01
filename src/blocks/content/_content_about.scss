@@ -1,0 +1,10 @@
+.content_about{
+    padding: map-get($map: $spacers, $key: 4) 0 0;
+    &__nav{
+        border-bottom: 1px solid rgba(26,26,26,0.2);
+    }
+    &__content{
+        background: #F6F6F6;
+        padding: 64px 0 map-get($map: $spacers, $key: 5);
+    }
+}
