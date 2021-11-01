@@ -12,6 +12,18 @@
     border-radius: $border-radius;
     background: $white url('../icon/svg-bg-strategy.png') no-repeat right bottom / cover;
 
+    &__open-modal{
+        position: absolute;
+        top: $grid-gutter-width;
+        right: $grid-gutter-width;
+
+        transform: translateY(-8px);
+
+        width: 32px;
+        height: 32px;
+        background: url('../icon/open-modal.svg') no-repeat center / contain;
+
+    }
     &__risk{
         display: grid;
         grid-template-columns: 80px auto;

@@ -171,6 +171,18 @@
   background: #ffffff url("../icon/svg-bg-strategy.png") no-repeat right bottom/cover;
 }
 
+.item__open-modal {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  -webkit-transform: translateY(-8px);
+  -ms-transform: translateY(-8px);
+  transform: translateY(-8px);
+  width: 32px;
+  height: 32px;
+  background: url("../icon/open-modal.svg") no-repeat center/contain;
+}
+
 .item__risk {
   display: grid;
   grid-template-columns: 80px auto;
