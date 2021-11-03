@@ -6,7 +6,7 @@ block variables
 block content
     section.content.content_titulary
         .container 
-            .row.align-items-center
+            .row.align-items-center.flex-xs-column-reverse
                 .col-6.col-sm-12 
                     h1.content_titulary__heading Инвестиции — это&nbsp;просто
                     p.content__offer.content_titulary__offer.mb-2 Ваши доходы растут под нашим надёжным управлением
@@ -16,7 +16,7 @@ block content
     include ../items/slider/slider.pug
     section.content.content_strategy
         .container 
-            .row.align-items-center
+            .row.align-items-center.flex-xs-column-reverse
                 .col-7.col-sm-12 
                     h3.text-bold Поможем выбрать стратегию
                     p.content_strategy__offer.mb-2 Если вы не&nbsp;знаете, какую стратегию выбрать, или вы&nbsp;хотите узнать, 
@@ -29,15 +29,15 @@ block content
     section.content
         .container
             .pb-2
-                h2.text-center.mb-1 Что такое доверительное управление?
-                p.content__offer.text-center Доверительное управление — это передача средств в распоряжение управляющей компании с целью получения прибыли. УК вкладывает ваш капитал в акции, облигации и другие инструменты фондовой биржи. По сути, при доверительном управлении вы «нанимаете» менеджера, который вместо вас следит за рынком, принимает решения и зарабатывает для вас деньги.
-            .row.pt-2
-                .col-4.col-sm-12
+                h2.text-center.text-xs-left.mb-1 Что такое доверительное управление?
+                p.content__offer.text-center.text-xs-left Доверительное управление — это передача средств в распоряжение управляющей компании с целью получения прибыли. УК вкладывает ваш капитал в акции, облигации и другие инструменты фондовой биржи. По сути, при доверительном управлении вы «нанимаете» менеджера, который вместо вас следит за рынком, принимает решения и зарабатывает для вас деньги.
+            .row.pt-2.pt-xs-0
+                .col-4.col-sm-12.mb-xs-2
                     .info
                         img.info__image(src="./icon/arrow.svg")
                         p.info__title Как это работает
                         p.info__content Вы выбираете стратегию, срок вложений, валюту, рынок, уровень риска и другие детали. Затем заключается договор и открывается счёт. Управляющая компания работает с вашим портфелем, продавая или покупая активы, ориентируясь на оперативные рыночные данные, аналитику и собственную экспертизу.
-                .col-4.col-sm-12
+                .col-4.col-sm-12.mb-xs-2
                     .info
                         img.info__image(src="./icon/circle.svg")
                         p.info__title Прозрачность работы
@@ -49,7 +49,7 @@ block content
                         p.info__content Доверительное управление — это возможность заработать больше, чем при открытии банковского вклада или вложении в паевые фонды. Вам не нужно вникать в тонкости инвестиционной деятельности. Индивидуальный подход и широкие возможности для инвестиций, а значит, более высокий доход.
     section.content.content_trust.bg-light-grey 
         .container 
-            .row.align-items-center
+            .row.align-items-center.flex-xs-column-reverse
                 .col-6.col-sm-12 
                     p.h2.content_trust__heading О компании
                     p.content__offer.text-bold.mb-1 С нами инвестиции — это просто.

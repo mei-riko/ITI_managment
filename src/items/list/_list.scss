@@ -19,6 +19,10 @@
 
             background: $green1;
         }
+
+        &:last-child{
+            margin-bottom: 0;
+        }
     }
     &__item-title{
         font-weight: $font-weight-bold;

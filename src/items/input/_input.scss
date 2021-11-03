@@ -23,3 +23,8 @@
         }
     }
 }
+@media all and (max-width: map-get($grid-breakpoints, 'xs')){
+    .input{
+        padding: 16px;
+    }
+}

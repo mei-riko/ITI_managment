@@ -9,10 +9,21 @@
         font-size: map-get($map: $heading, $key: h3);
         line-height: $headings-line-height;
         font-weight: $font-weight-bold;
+        white-space: nowrap;
 
         margin-bottom: $spacer-gutter;
     }
     &__offer{
         filter: opacity(.6);
+    }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'xs')){
+    .props{
+        grid-template-columns: repeat(2, 1fr);
+
+        &__title{
+            font-size: map-get($map: $heading, $key: h4);
+        }
     }
 }

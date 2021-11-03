@@ -17,3 +17,12 @@
         max-width: 100%;
     }
 }
+
+@media all and (max-width: map-get($grid-breakpoints, 'xs')){
+    .content_trust{
+        &__image{
+            margin-bottom: map-get($map: $spacers, $key: 3);
+        }
+    }
+}
+

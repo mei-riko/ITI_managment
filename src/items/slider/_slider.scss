@@ -46,3 +46,13 @@
         align-items: stretch;
     }
 }
+
+@media all and (max-width: map-get($grid-breakpoints, 'xs')){
+    .slider{
+        &__arrow{
+            display: none;
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+}

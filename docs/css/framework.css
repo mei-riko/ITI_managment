@@ -385,12 +385,12 @@ template {
 @media all and (max-width: 375px) {
   .container {
     max-width: 100%;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .row {
-    margin-right: -6px;
-    margin-left: -6px;
+    margin-right: -20px;
+    margin-left: -20px;
   }
   .no-gutters {
     margin-right: 0;
@@ -804,8 +804,8 @@ template {
 
 @media all and (max-width: 375px) {
   .col, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
-    padding-right: 6px;
-    padding-left: 6px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
   .col-xs-1 {
     -webkit-box-flex: 0;
@@ -2264,6 +2264,25 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
 
 .h6, h6 {
   font-size: 18px;
+}
+
+@media all and (max-width: 375px) {
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: 700;
+  }
+  .h1, h1 {
+    font-size: 36px;
+  }
+  .h2, h2 {
+    font-size: 24px;
+  }
+  .h3, h3 {
+    font-size: 24px;
+  }
+  .h4, h4 {
+    font-size: 20px;
+  }
 }
 
 .mt-0 {

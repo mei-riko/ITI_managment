@@ -6,3 +6,10 @@
         overflow: visible;
     }
 }
+
+@media all and (max-width: map-get($grid-breakpoints, 'xs')){
+    .slider_inside{
+        padding-top: map-get($map: $spacers, $key: 2);
+        transform: translateY(0);
+    }
+}

@@ -2,3 +2,9 @@
     background: #F7F7F7;
     padding: 80px 0;
 }
+
+@media all and (max-width: map-get($grid-breakpoints, 'xs')){
+    .content_props{
+        padding: map-get($map: $spacers, $key: 3) 0;
+    }
+}

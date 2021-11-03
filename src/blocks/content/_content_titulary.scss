@@ -19,3 +19,14 @@
         max-width: 100%;
     }
 }
+
+@media all and (max-width: map-get($grid-breakpoints, 'xs')){
+    .content_titulary{
+        padding-bottom: map-get($map: $spacers, $key: 3);
+
+        &__image{
+            margin-bottom: map-get($map: $spacers, $key: 2);
+        }
+        
+    }
+}

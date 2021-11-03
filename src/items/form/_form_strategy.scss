@@ -3,3 +3,9 @@
     grid-gap: 20px;
     grid-template-columns: 1fr 290px;
 }
+
+@media all and (max-width: map-get($grid-breakpoints, 'xs')){
+    .form_strategy{
+        grid-template-columns: 1fr;
+    }
+}

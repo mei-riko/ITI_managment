@@ -82,3 +82,18 @@
         }
     }
 }
+
+@media all and (max-width: map-get($grid-breakpoints, 'xs')){
+    .footer{
+        padding: map-get($map: $spacers, $key: 2) 0 map-get($map: $spacers, $key: 3);
+
+        // Контактная информация
+        &__contact{
+            grid-gap: 2*$spacer-gutter;
+        }
+        // Доп. текст
+        &__additional{
+            margin-top: map-get($map: $spacers, $key: 2);
+        }
+    }
+}

@@ -11,3 +11,15 @@
         font-size: map-get($map: $font-size, $key: lg);
     }
 }
+
+@media all and (max-width: map-get($grid-breakpoints, 'xs')){
+    .info{
+        &__image{
+            width: 100px;
+            margin-bottom: map-get($map: $spacers, $key: 1);
+        }
+        &__content{
+            font-size: map-get($map: $font-size, $key: md);
+        }
+    }
+}

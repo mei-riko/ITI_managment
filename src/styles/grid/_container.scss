@@ -46,16 +46,16 @@
     max-width: map-get($map: $container-max-widths, $key: sm);
   }
 }
-// < 420px
+// < 375px
 @media all and (max-width: map-get($grid-breakpoints, 'xs')){
   .container {
     max-width: map-get($map: $container-max-widths, $key: xs);
-    padding-left: $spacer-gutter;
-    padding-right: $spacer-gutter;
+    padding-left: ($grid-gutter-width/2);
+    padding-right: ($grid-gutter-width/2);
   }
   .row{
-    margin-right: -($spacer-gutter/2);
-    margin-left: -($spacer-gutter/2);
+    margin-right: -($grid-gutter-width/2);
+    margin-left: -($grid-gutter-width/2);
   }
   .no-gutters {
     margin-right: 0;

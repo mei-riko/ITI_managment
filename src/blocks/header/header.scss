@@ -13,4 +13,21 @@
         justify-content: flex-end;
         flex-wrap: nowrap;
     }
+    &__toggle{
+        display: none;
+    }
+}
+
+// < 375px
+@media all and (max-width: map-get($grid-breakpoints, 'xs')){
+    .header{
+        padding: $spacer 0;
+
+        &__logo{
+            height: 16px;
+        }
+        &__toggle{
+            display: block;
+        }
+    }
 }

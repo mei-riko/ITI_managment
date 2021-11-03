@@ -28,3 +28,10 @@
         margin: 0 26px;
     }
 }
+
+// < 375px
+@media all and (max-width: map-get($grid-breakpoints, 'xs')){
+    .nav{
+        display: none;
+    }
+}

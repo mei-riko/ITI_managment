@@ -40,6 +40,8 @@
             font-size: map-get($map: $font-size, $key: lg);
             font-weight: $font-weight-bold;
             filter: opacity(.6);
+
+            white-space: nowrap;
     
             margin-right: map-get($map: $spacers, $key: 3);
     
@@ -80,6 +82,26 @@
         }
         &--show{
             opacity: 1;
+        }
+    }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'xs')){
+    .tabs{
+        &__nav{
+            max-width: 100%;
+            padding-bottom: $spacer-gutter;
+            overflow: scroll;
+        }
+        &__item{
+            padding: 8px 16px;
+
+            &_inside{
+                font-size: map-get($map: $font-size, $key: md);
+                padding: 14px 0;
+                margin-bottom: -12px;
+                margin-right: map-get($map: $spacers, $key: 1);
+            }
         }
     }
 }

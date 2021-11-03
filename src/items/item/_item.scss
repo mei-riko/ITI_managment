@@ -87,3 +87,20 @@
         }
     }
 }
+
+@media all and (max-width: map-get($grid-breakpoints, 'xs')){
+    .item{
+        padding: 24px 30px 66px;
+
+        &__open-modal{
+            top: 24px;
+            right: 30px;
+        }
+        &__title{
+            height: auto;
+        }
+        &__stats{
+            margin-bottom: map-get($map: $spacers, $key: 2);
+        }
+    }
+}
