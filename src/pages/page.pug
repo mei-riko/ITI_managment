@@ -31,6 +31,28 @@ block content
                 .props__item
                     .props__title Рубли РФ
                     .props__offer Валюта <br>вложений
+    section.calculator(data-percent="24" data-stragery="1" data-period="5" data-min="1" data-max="10" data-start="2")
+        .container
+            p.h2.mb-2 Калькулятор доходности
+            p.calculator__title Сумма вложения
+            p.calculator__num
+                span#incomingData  
+                span.calculator__incoming-cur ₽
+            #calculatorSlider
+            .calculator__result
+                .calculator__yield
+                    p.calculator__title Доходность
+                    p.calculator__num
+                        span#yieldData  
+                        span.calculator__incoming-cur ₽
+                .calculator__return
+                    p.calculator__title Возврат от государства 13%
+                    p.calculator__num +&nbsp;
+                        span#refundData  
+                        span.calculator__incoming-cur ₽
+                    a.calculator__link(href="#") Подробнее
+                .calculator__ready 
+                    a.btn.btn_action(href="#") Оформить онлайн
     section.content.content_about.bg-light-grey
         .container
             .row
@@ -88,4 +110,7 @@ block content
                 .col-6.col-sm-12
                     img.content_trust__image(src="./img/default.png")
 block footer
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js")
+    link(href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css", rel="stylesheet")
+    script(src="../js/jquery.ui.touch-punch.min.js")
     script(src="https://unpkg.com/swiper@7/swiper-bundle.min.js")
