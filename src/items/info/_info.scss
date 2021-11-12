@@ -1,4 +1,6 @@
 .info{
+    text-align: center;
+    
     &__image{
         margin-bottom: map-get($map: $spacers, $key: 3);
     }
@@ -8,18 +10,24 @@
         margin-bottom: $spacer-gutter;
     }
     &__content{
-        font-size: map-get($map: $font-size, $key: lg);
+        // font-size: map-get($map: $font-size, $key: md);
     }
 }
-
-@media all and (max-width: map-get($grid-breakpoints, 'xs')){
+@media all and (max-width: map-get($grid-breakpoints, 'xl')){
+    .info{
+        &__image{
+            margin-bottom: map-get($map: $spacers, $key: 2);
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .info{
         &__image{
             width: 100px;
             margin-bottom: map-get($map: $spacers, $key: 1);
         }
         &__content{
-            font-size: map-get($map: $font-size, $key: md);
+            // font-size: map-get($map: $font-size, $key: md);
         }
     }
 }

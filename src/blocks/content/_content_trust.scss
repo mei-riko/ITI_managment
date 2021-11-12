@@ -1,7 +1,7 @@
 .content_trust{
     &__heading{
         font-weight: $font-weight-bold;
-        margin-bottom: $spacer-gutter;
+        // margin-bottom: $spacer-gutter;
     }
     &__link{
         font-weight: $font-weight-bold;
@@ -17,12 +17,36 @@
         max-width: 100%;
     }
 }
-
-@media all and (max-width: map-get($grid-breakpoints, 'xs')){
+@media all and (max-width: map-get($grid-breakpoints, 'xl')){
     .content_trust{
-        &__image{
-            margin-bottom: map-get($map: $spacers, $key: 3);
+        &__heading-form{
+            font-size: map-get($map: $heading, $key: h2);
         }
     }
 }
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .content_trust{
+        padding: map-get($map: $spacers, $key: 3) 0;
+        overflow: hidden;
 
+        &__image{
+            max-width: unset;
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .content_trust{
+        &__image{
+            margin-left: 0;
+            margin-bottom: map-get($map: $spacers, $key: 3);
+            max-width: 100%;
+        }
+    }
+}
+// @media all and (max-width: map-get($grid-breakpoints, 'xs')){
+//     .content_trust{
+//         &__image{
+//             margin-bottom: map-get($map: $spacers, $key: 3);
+//         }
+//     }
+// }

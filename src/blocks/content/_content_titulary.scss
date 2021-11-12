@@ -19,7 +19,37 @@
         max-width: 100%;
     }
 }
-
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .content_titulary{
+        overflow: hidden;
+        
+        &__image{
+            width: 360px;
+            max-width: unset;
+        }
+        &__offer{
+            font-size: map-get($map: $font-size, $key: lg);
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .content_titulary{
+        // padding-bottom: map-get($map: $spacers, $key: 3);
+        &__image{
+            max-width: 100%;
+            margin-left: 0;
+            margin-bottom: map-get($map: $spacers, $key: 3);
+        }
+        
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .content_titulary{
+        &__offer{
+            font-size: map-get($map: $font-size, $key: md);
+        }
+    }
+}
 @media all and (max-width: map-get($grid-breakpoints, 'xs')){
     .content_titulary{
         padding-bottom: map-get($map: $spacers, $key: 3);

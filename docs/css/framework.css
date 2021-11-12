@@ -360,25 +360,25 @@ template {
 
 @media all and (max-width: 1440px) {
   .container {
-    max-width: 0px;
+    max-width: 960px;
   }
 }
 
 @media all and (max-width: 1024px) {
   .container {
-    max-width: 0px;
+    max-width: 720px;
   }
 }
 
 @media all and (max-width: 768px) {
   .container {
-    max-width: 0px;
+    max-width: 100%;
   }
 }
 
 @media all and (max-width: 576px) {
   .container {
-    max-width: 0px;
+    max-width: 100%;
   }
 }
 
@@ -1916,7 +1916,7 @@ html.hidden, body.hidden {
 }
 
 .bg-light-grey {
-  background: #FBFBFB;
+  background: #F6F6F6;
 }
 
 p {
@@ -2266,7 +2266,16 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
   font-size: 18px;
 }
 
-@media all and (max-width: 375px) {
+@media all and (max-width: 1440px) {
+  .h1, h1 {
+    font-size: 48px;
+  }
+  .h2, h2 {
+    font-size: 36px;
+  }
+}
+
+@media all and (max-width: 576px) {
   h1, h2, h3, h4, h5, h6,
   .h1, .h2, .h3, .h4, .h5, .h6 {
     font-weight: 700;

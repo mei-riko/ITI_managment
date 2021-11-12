@@ -23,3 +23,4 @@ import '../blocks/tabs/tabs';
 import '../items/input/input';
 import '../items/slider/slider';
 import '../blocks/calculator/calculator';
+import '../blocks/header/header';

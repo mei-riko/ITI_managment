@@ -15,7 +15,26 @@
         max-width: 100%;
     }
 }
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .content_strategy{
+        overflow: hidden;
 
+        &__image{
+            max-width: unset;
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .content_strategy{
+        // padding-bottom: map-get($map: $spacers, $key: 3);
+        &__image{
+            max-width: 100%;
+            margin-left: 0;
+            margin-bottom: map-get($map: $spacers, $key: 3);
+        }
+        
+    }
+}
 @media all and (max-width: map-get($grid-breakpoints, 'xs')){
     .content_strategy{
         &__image{

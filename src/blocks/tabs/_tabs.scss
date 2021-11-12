@@ -85,14 +85,24 @@
         }
     }
 }
-
-@media all and (max-width: map-get($grid-breakpoints, 'xs')){
+// < 1024px
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
     .tabs{
         &__nav{
             max-width: 100%;
             padding-bottom: $spacer-gutter;
-            overflow: scroll;
+            overflow: auto;
         }
+    }
+}
+// < 768px
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .tabs{
+        // &__nav{
+        //     max-width: 100%;
+        //     padding-bottom: $spacer-gutter;
+        //     overflow: scroll;
+        // }
         &__item{
             padding: 8px 16px;
 

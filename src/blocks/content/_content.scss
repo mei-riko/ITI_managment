@@ -4,7 +4,15 @@
         font-size: map-get($map: $font-size, $key: lg);
     }
 }
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .content{
+        padding: map-get($map: $spacers, $key: 4) 0;
 
+        &__offer{
+            font-size: map-get($map: $font-size, $key: md);
+        }
+    }
+}
 @media all and (max-width: map-get($grid-breakpoints, 'xs')){
     .content{
         padding: map-get($map: $spacers, $key: 3) 0;

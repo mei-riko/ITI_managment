@@ -27,15 +27,27 @@ const sliderUnit = ( elem ) => {
                     },
                     
                     breakpoints: {
+                        376: {
+                            // slidesPerView: 1,
+                            slidesPerView: 'auto',
+                            spaceBetween: 20,
+                        },
                         577: {
-                            slidesPerView: 1,
+                            // slidesPerView: 1,
+                            slidesPerView: 'auto',
                             spaceBetween: 20,
                         },
                         769: {
-                            slidesPerView: 2,
+                            // slidesPerView: 1,
+                            slidesPerView: 'auto',
                             spaceBetween: 20,
                         },
                         1025: {
+                            slidesPerView: 2,
+                            spaceBetween: 20,
+                            
+                        },
+                        1441: {
                             slidesPerView: 3,
                             spaceBetween: 20,
                             
