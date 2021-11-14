@@ -2,12 +2,14 @@
     overflow: hidden;
     padding: map-get($map: $spacers, $key: 5) 0 72px;
 }
+// < 1024px
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){
     .content_has-slider{
-        padding: map-get($map: $spacers, $key: 3) 0 map-get($map: $spacers, $key: 4);
+        padding: map-get($map: $spacers, $key: 3) 0 52px;
     }
 }
-@media all and (max-width: map-get($grid-breakpoints, 'xs')){
+// < 576px
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .content_has-slider{
         padding: map-get($map: $spacers, $key: 3) 0;
     }

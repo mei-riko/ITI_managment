@@ -77,6 +77,12 @@
   }
 }
 
+@media all and (max-width: 768px) {
+  .nav {
+    top: 80px;
+  }
+}
+
 .btn {
   border: none;
   outline: none;
@@ -514,7 +520,7 @@
   overflow: visible;
 }
 
-@media all and (max-width: 375px) {
+@media all and (max-width: 576px) {
   .slider_inside {
     padding-top: 44px;
     -webkit-transform: translateY(0);
@@ -576,28 +582,31 @@
 }
 
 @media all and (max-width: 1024px) {
+  .header {
+    padding: 32px 0;
+  }
   .header__toggle {
     display: block;
   }
   .header__toggle--open rect:nth-child(1) {
-    -webkit-transform: rotate(30deg);
-    -ms-transform: rotate(30deg);
-    transform: rotate(30deg);
+    -webkit-transform: rotate(30deg) translateY(4px);
+    -ms-transform: rotate(30deg) translateY(4px);
+    transform: rotate(30deg) translateY(4px);
     -webkit-transform-origin: center;
     -ms-transform-origin: center;
     transform-origin: center;
   }
   .header__toggle--open rect:nth-child(2) {
-    -webkit-transform: rotate(-30deg);
-    -ms-transform: rotate(-30deg);
-    transform: rotate(-30deg);
-    -webkit-transform-origin: revert;
-    -ms-transform-origin: revert;
-    transform-origin: revert;
+    -webkit-transform: rotate(-30deg) translateY(-4px);
+    -ms-transform: rotate(-30deg) translateY(-4px);
+    transform: rotate(-30deg) translateY(-4px);
+    -webkit-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center;
   }
 }
 
-@media all and (max-width: 375px) {
+@media all and (max-width: 768px) {
   .header {
     padding: 24px 0;
   }
@@ -661,7 +670,7 @@
   filter: opacity(0.4);
 }
 
-.footer__licence {
+.footer__license {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -672,7 +681,7 @@
   margin-bottom: 8px;
 }
 
-.footer__licence-icon {
+.footer__license-icon {
   -webkit-filter: opacity(0.4);
   filter: opacity(0.4);
   margin-left: 12px;
@@ -704,15 +713,21 @@
   filter: opacity(1);
 }
 
-@media all and (max-width: 375px) {
+@media all and (max-width: 576px) {
   .footer {
     padding: 44px 0 56px;
   }
-  .footer__contact {
-    grid-gap: 24px;
-  }
   .footer__additional {
     margin-top: 44px;
+  }
+  .footer__license, .footer__content {
+    font-size: 14px;
+  }
+}
+
+@media all and (max-width: 375px) {
+  .footer__contact {
+    grid-gap: 24px;
   }
 }
 
@@ -756,7 +771,7 @@
   max-width: 100%;
 }
 
-.content_titulary__image {
+.content_titulary__image, .content_titulary__image-inside {
   display: block;
   margin-left: auto;
   width: 500px;
@@ -768,7 +783,7 @@
   .content_titulary {
     overflow: hidden;
   }
-  .content_titulary__image {
+  .content_titulary__image, .content_titulary__image-inside {
     width: 360px;
     max-width: unset;
   }
@@ -783,20 +798,25 @@
     margin-left: 0;
     margin-bottom: 56px;
   }
-}
-
-@media all and (max-width: 768px) {
+  .content_titulary__image-inside {
+    max-width: 100%;
+    margin-top: 56px;
+  }
   .content_titulary__offer {
     font-size: 18px;
   }
 }
 
-@media all and (max-width: 375px) {
+@media all and (max-width: 576px) {
   .content_titulary {
     padding-bottom: 56px;
   }
   .content_titulary__image {
     margin-bottom: 44px;
+  }
+  .content_titulary__image-inside {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -841,6 +861,12 @@
   }
 }
 
+@media all and (max-width: 576px) {
+  .content_trust__heading-form {
+    font-size: 24px;
+  }
+}
+
 .content_has-slider {
   overflow: hidden;
   padding: 120px 0 72px;
@@ -848,11 +874,11 @@
 
 @media all and (max-width: 1024px) {
   .content_has-slider {
-    padding: 56px 0 100px;
+    padding: 56px 0 52px;
   }
 }
 
-@media all and (max-width: 375px) {
+@media all and (max-width: 576px) {
   .content_has-slider {
     padding: 56px 0;
   }
@@ -903,7 +929,7 @@
   padding: 80px 0;
 }
 
-@media all and (max-width: 375px) {
+@media all and (max-width: 576px) {
   .content_props {
     padding: 56px 0;
   }
@@ -924,6 +950,9 @@
   background-color: #1A1A1A;
   -webkit-filter: opacity(0.2);
   filter: opacity(0.2);
+  -webkit-transform: translateY(-12px);
+  -ms-transform: translateY(-12px);
+  transform: translateY(-12px);
 }
 
 .content_about__content {
@@ -931,7 +960,13 @@
   padding: 64px 0 120px;
 }
 
-@media all and (max-width: 375px) {
+@media all and (max-width: 768px) {
+  .content_about__content {
+    padding: 80px 0;
+  }
+}
+
+@media all and (max-width: 576px) {
   .content_about {
     padding: 32px 0 0;
   }
@@ -1004,6 +1039,57 @@
   height: 8px;
 }
 
+@media all and (max-width: 1024px) {
+  .calculator__title {
+    font-size: 18px;
+  }
+  .calculator__num {
+    font-size: 48px;
+  }
+  .calculator__result {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 24px;
+    padding-top: 12px;
+  }
+  .calculator__ready-btn {
+    width: 100%;
+  }
+  .calculator__slider {
+    margin-top: 44px;
+    margin-bottom: 56px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .calculator__ready {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    padding-top: 12px;
+  }
+  .calculator__ready-btn {
+    width: auto;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .calculator {
+    padding: 56px 0;
+  }
+  .calculator__num {
+    font-size: 36px;
+  }
+  .calculator__result {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media all and (max-width: 375px) {
+  .calculator__ready-btn {
+    width: 100%;
+  }
+}
+
 .tabs__nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1017,6 +1103,9 @@
   flex-direction: row;
   position: relative;
   z-index: 101;
+  max-width: 100%;
+  padding-bottom: 12px;
+  overflow: auto;
 }
 
 .tabs__nav_with-slider {
@@ -1101,14 +1190,6 @@
   opacity: 1;
 }
 
-@media all and (max-width: 768px) {
-  .tabs__nav {
-    max-width: 100%;
-    padding-bottom: 12px;
-    overflow: auto;
-  }
-}
-
 @media all and (max-width: 576px) {
   .tabs__item {
     padding: 8px 16px;
@@ -1124,7 +1205,7 @@
 .props {
   display: grid;
   grid-template-columns: repeat(5, 200px);
-  grid-gap: 20px;
+  grid-gap: 24px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1143,10 +1224,19 @@
   filter: opacity(0.6);
 }
 
-@media all and (max-width: 375px) {
+@media all and (max-width: 1024px) {
+  .props {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media all and (max-width: 768px) {
   .props {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+@media all and (max-width: 576px) {
   .props__title {
     font-size: 24px;
   }

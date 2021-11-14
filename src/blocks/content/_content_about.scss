@@ -11,6 +11,8 @@
             height: 1px;
             background-color: $black;
             filter: opacity(.2);
+
+            transform: translateY(-$spacer-gutter);
         }
     }
     &__content{
@@ -18,8 +20,16 @@
         padding: 64px 0 map-get($map: $spacers, $key: 5);
     }
 }
-
-@media all and (max-width: map-get($grid-breakpoints, 'xs')){
+// < 768px
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .content_about{
+        &__content{
+            padding: 80px 0;
+        }
+    }
+}
+// < 576px
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .content_about{
         padding: map-get($map: $spacers, $key: 1) 0 0;
 

@@ -21,23 +21,25 @@ $(function() {
     let refundStart = Math.round( (yeildStart*13)/100 );
     $("#refundData").text( (new Intl.NumberFormat("ru-RU", { useGrouping: true, minimumFractionDigits: 0 })).format(Number(refundStart)) );
 
-    $("#calculatorSlider").slider({
-        range: "min",
-        value: startValue,
-        min: minValue,
-        max: maxValue,
-        slide : function(event, ui) {
-            let value = Math.round(ui.value*100000);
-            let valueConv = (new Intl.NumberFormat("ru-RU", { useGrouping: true, minimumFractionDigits: 0 })).format(Number(value));
-            $("#incomingData").text(valueConv);
-            
-            let result = Math.round( (period*value*percent)/100 );
-            let resultConv = (new Intl.NumberFormat("ru-RU", { useGrouping: true, minimumFractionDigits: 0 })).format(Number(result));
-            $("#yieldData").text(resultConv);
-
-            let refund = Math.round( (result*13)/100 );
-            let refundConv = (new Intl.NumberFormat("ru-RU", { useGrouping: true, minimumFractionDigits: 0 })).format(Number(refund));
-            $("#refundData").text(refundConv);
-        }
-    });
+    if( $("#calculatorSlider").length > 0 ){
+        $("#calculatorSlider").slider({
+            range: "min",
+            value: startValue,
+            min: minValue,
+            max: maxValue,
+            slide : function(event, ui) {
+                let value = Math.round(ui.value*100000);
+                let valueConv = (new Intl.NumberFormat("ru-RU", { useGrouping: true, minimumFractionDigits: 0 })).format(Number(value));
+                $("#incomingData").text(valueConv);
+                
+                let result = Math.round( (period*value*percent)/100 );
+                let resultConv = (new Intl.NumberFormat("ru-RU", { useGrouping: true, minimumFractionDigits: 0 })).format(Number(result));
+                $("#yieldData").text(resultConv);
+    
+                let refund = Math.round( (result*13)/100 );
+                let refundConv = (new Intl.NumberFormat("ru-RU", { useGrouping: true, minimumFractionDigits: 0 })).format(Number(refund));
+                $("#refundData").text(refundConv);
+            }
+        });
+    }
 });

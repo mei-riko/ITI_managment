@@ -7,6 +7,10 @@
         position: relative;
         z-index: 101;
 
+        max-width: 100%;
+        padding-bottom: $spacer-gutter;
+        overflow: auto;
+
         &_with-slider{
             max-width: calc( 100% - 108px);
         }
@@ -85,17 +89,8 @@
         }
     }
 }
-// < 1024px
-@media all and (max-width: map-get($grid-breakpoints, 'md')){
-    .tabs{
-        &__nav{
-            max-width: 100%;
-            padding-bottom: $spacer-gutter;
-            overflow: auto;
-        }
-    }
-}
-// < 768px
+
+// < 576px
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .tabs{
         // &__nav{

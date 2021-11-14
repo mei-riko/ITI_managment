@@ -1,7 +1,7 @@
 .props{
     display: grid;
     grid-template-columns: repeat(5, 200px);
-    grid-gap: $grid-gutter-width/2;
+    grid-gap: 2*$spacer-gutter;
 
     justify-content: space-between;
 
@@ -17,11 +17,26 @@
         filter: opacity(.6);
     }
 }
+// < 1024px
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .props{
+        grid-template-columns: repeat(3, 1fr);
 
-@media all and (max-width: map-get($grid-breakpoints, 'xs')){
+        // &__title{
+        //     font-size: map-get($map: $heading, $key: h4);
+        // }
+    }
+}
+
+// < 768px
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
     .props{
         grid-template-columns: repeat(2, 1fr);
-
+    }
+}
+// < 576px
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .props{
         &__title{
             font-size: map-get($map: $heading, $key: h4);
         }

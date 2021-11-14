@@ -19,8 +19,34 @@ html,body {
     overflow: hidden;
 }
 
+.show-overlay{
+    overflow: hidden;
+    position: relative;
+    z-index: 99;
+
+    &:after{
+        content: '';
+        display: block;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        background-color: $black;
+        opacity: .4;
+    }
+}
+.above-overlay{
+    position: relative;
+    z-index: 101;
+}
 .bg-light-grey{
-    background: $light-grey;
+    background-color: $light-grey;
+}
+.bg-white{
+    background-color: $white;;
 }
 p {
     font-size: 1rem;

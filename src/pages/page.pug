@@ -6,13 +6,13 @@ block variables
 block content
     section.content.content_titulary
         .container 
-            .row.align-items-center.flex-xs-column-reverse
-                .col-6.col-sm-12.text-xs-center
+            .row.align-items-center.align-items-md-start.flex-md-column-reverse
+                .col-6.col-lg-7.col-md-12.text-sm-center
                     h1.content_titulary__heading Название стратегии
                     p.content__offer.mb-2 это инвестиции в паи биржевого фонда с портфелем из акций ТОП-300 крупнейших компаний Китая, в том числе через ETF.
                     a.btn.btn_action(href="#") Описание стратегии
-                .col-6.col-sm-12.text-xs-center
-                    img.content_titulary__image(src="./img/default.png")
+                .col-6.col-lg-5.col-md-12
+                    img.content_titulary__image.content_titulary__image-inside(src="./img/default.png")
     section.content.content_props
         .container
             .props
@@ -38,7 +38,8 @@ block content
             p.calculator__num
                 span#incomingData  
                 span.calculator__incoming-cur ₽
-            #calculatorSlider
+            .calculator__slider
+                #calculatorSlider
             .calculator__result
                 .calculator__yield
                     p.calculator__title Доходность
@@ -52,12 +53,12 @@ block content
                         span.calculator__incoming-cur ₽
                     a.calculator__link(href="#") Подробнее
                 .calculator__ready 
-                    a.btn.btn_action(href="#") Оформить онлайн
+                    a.btn.btn_action.calculator__ready-btn(href="#") Оформить онлайн
     section.content.content_about.bg-light-grey
         .container
             .row
-                .col-9.col-sm-12
-                    p.h2.mb-2.mb-xs-1 Описание стратегии
+                .col-9.col-lg-12
+                    p.h2.mb-2.mb-sm-1 Описание стратегии
                     p.content__offer Стратегия «Название стратегии» — это инвестиции в паи биржевого фонда с портфелем из акций ТОП-300 крупнейших компаний Китая, в том числе через ETF. Экономика Китая — крупнейшая в мире по ППС, с мощной промышленностью и передовыми новейшими технологиями. 
         .tabs
             .content_about__nav.mt-3.mt-xs-1
@@ -71,7 +72,7 @@ block content
                 .container
                     .tabs__content.tabs__content--show.tabs__content--active#tab1content
                         .row 
-                            .col-9.col-sm-12
+                            .col-9.col-lg-12
                                 .list
                                     .list__item
                                         .list__item-title Вознаграждение за размещение
@@ -101,13 +102,13 @@ block content
     include ../items/slider/slider.pug
     section.content.content_trust.bg-light-grey 
         .container 
-            .row.align-items-center.flex-xs-column-reverse
-                .col-6.col-sm-12 
-                    p.h2.content_trust__heading О компании
+            .row.align-items-center.align-items-md-start.flex-md-column-reverse
+                .col-6.col-xl-7.col-lg-8.col-md-12 
+                    p.h2.content_trust__heading-form О компании
                     p.content__offer.text-bold.mb-1 С нами инвестиции — это просто.
                     p.content__offer.mb-1 ITI Менеджмент — современная управляющая компания. Наша специализация — финансовые и инвестиционные услуги физическим лицам. Мы профессионально и эффективно управляем вашими средствами, помогая вам стабильно увеличивать доход. 
                     a.content_trust__link(href="#") Подробнее
-                .col-6.col-sm-12
+                .col-6.col-xl-5.col-lg-4.col-md-12
                     img.content_trust__image(src="./img/default.png")
 block footer
     script(src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js")

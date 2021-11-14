@@ -78,3 +78,10 @@
         }
     }
 }
+
+// < 768px
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .nav{
+        top: 80px;
+    }
+}

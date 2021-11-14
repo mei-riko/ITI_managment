@@ -34,29 +34,32 @@
 @media all and (max-width: map-get($grid-breakpoints, 'xl')){
     .header{
         grid-template-columns: 160px 1fr;
+        
     }
 }
 // < 1024px
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){
     .header{
+        padding: map-get($map: $spacers, $key: 1) 0;
+
         &__toggle{
             display: block;
 
             &--open{
                 rect:nth-child(1){
-                    transform: rotate(30deg);
+                    transform: rotate(30deg) translateY(4px);
                     transform-origin: center;
                 }
                 rect:nth-child(2){
-                    transform: rotate(-30deg);
-                    transform-origin: revert;
+                    transform: rotate(-30deg) translateY(-4px);
+                    transform-origin: center;
                 }
             }
         }
     }
 }
-// < 375px
-@media all and (max-width: map-get($grid-breakpoints, 'xs')){
+// < 1024px
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
     .header{
         padding: $spacer 0;
 

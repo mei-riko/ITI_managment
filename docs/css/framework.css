@@ -1915,8 +1915,35 @@ html.hidden, body.hidden {
   overflow: hidden;
 }
 
+.show-overlay {
+  overflow: hidden;
+  position: relative;
+  z-index: 99;
+}
+
+.show-overlay:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #1A1A1A;
+  opacity: .4;
+}
+
+.above-overlay {
+  position: relative;
+  z-index: 101;
+}
+
 .bg-light-grey {
-  background: #F6F6F6;
+  background-color: #F6F6F6;
+}
+
+.bg-white {
+  background-color: #ffffff;
 }
 
 p {
