@@ -15,11 +15,15 @@ $(function() {
     let startValueRub = Math.round(startValue*100000);
     $("#incomingData").text( (new Intl.NumberFormat("ru-RU", { useGrouping: true, minimumFractionDigits: 0 })).format(Number(startValueRub)) );
 
-    let yeildStart = Math.round( (startValueRub*period*percent)/100 );
+    let refundStart = Math.round( (startValueRub*13)/100 );
+    if( refundStart > 42000 ){
+        refundStart = 42000;
+    }
+    $("#refundData").text( (new Intl.NumberFormat("ru-RU", { useGrouping: true, minimumFractionDigits: 0 })).format(Number(refundStart)) );
+
+    let yeildStart = Math.round( (startValueRub*(1 + percent*period/100) + refundStart*period) );
     $("#yieldData").text( (new Intl.NumberFormat("ru-RU", { useGrouping: true, minimumFractionDigits: 0 })).format(Number(yeildStart)) );
 
-    let refundStart = Math.round( (yeildStart*13)/100 );
-    $("#refundData").text( (new Intl.NumberFormat("ru-RU", { useGrouping: true, minimumFractionDigits: 0 })).format(Number(refundStart)) );
 
     if( $("#calculatorSlider").length > 0 ){
         $("#calculatorSlider").slider({
@@ -32,13 +36,16 @@ $(function() {
                 let valueConv = (new Intl.NumberFormat("ru-RU", { useGrouping: true, minimumFractionDigits: 0 })).format(Number(value));
                 $("#incomingData").text(valueConv);
                 
-                let result = Math.round( (period*value*percent)/100 );
-                let resultConv = (new Intl.NumberFormat("ru-RU", { useGrouping: true, minimumFractionDigits: 0 })).format(Number(result));
-                $("#yieldData").text(resultConv);
-    
-                let refund = Math.round( (result*13)/100 );
+                let refund = Math.round( (value*13)/100 );
+                if( refund > 42000 ){
+                    refund = 42000;
+                }
                 let refundConv = (new Intl.NumberFormat("ru-RU", { useGrouping: true, minimumFractionDigits: 0 })).format(Number(refund));
                 $("#refundData").text(refundConv);
+
+                let result = Math.round( (value*(1 + percent*period/100) + refund*period) );
+                let resultConv = (new Intl.NumberFormat("ru-RU", { useGrouping: true, minimumFractionDigits: 0 })).format(Number(result));
+                $("#yieldData").text(resultConv);
             }
         });
     }
