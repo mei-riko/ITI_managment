@@ -144,11 +144,11 @@ hr, .hr{
     border-bottom: 1px solid $border-color;
 }
 
-blockquote, .blockquote{
-    padding: $spacer;
-    background-color: $body-bg;
-    border-radius: $border-radius;
-}
+// blockquote, .blockquote{
+//     padding: $spacer;
+//     background-color: $body-bg;
+//     border-radius: $border-radius;
+// }
 
 @media all and (max-width: map-get($grid-breakpoints, 'xl')){
     .text-xl{

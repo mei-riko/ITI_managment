@@ -2094,12 +2094,6 @@ hr, .hr {
   border-bottom: 1px solid #d7d7d8;
 }
 
-blockquote, .blockquote {
-  padding: 24px;
-  background-color: #ffffff;
-  border-radius: 12px;
-}
-
 @media all and (max-width: 1440px) {
   .text-xl-left {
     text-align: left;

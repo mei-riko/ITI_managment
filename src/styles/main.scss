@@ -9,6 +9,8 @@
 @import "../items/form/form_strategy";
 @import "../items/input/input";
 
+@import "../items/blockquote/blockquote";
+
 // Info Item
 @import "../items/info/info";
 // Strategy Card
@@ -17,6 +19,9 @@
 @import "../items/item/item_strategy";
 
 @import "../items/list/list";
+@import "../items/list/list_principle";
+
+@import "../items/advantage/advantage";
 
 @import "../items/slider/swiper";
 @import "../items/slider/slider";

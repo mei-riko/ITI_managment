@@ -31,6 +31,10 @@
     }
 
     // UI Slider
+    &__slider{
+        margin-top: map-get($map: $spacers, $key: 3);
+        margin-bottom: map-get($map: $spacers, $key: 4);
+    }
     .ui-slider.ui-slider-horizontal {
         background: $green1;
         height: 8px;

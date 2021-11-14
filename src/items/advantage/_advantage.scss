@@ -1,0 +1,28 @@
+.advantage{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 56px 1fr;
+    grid-gap: 2*$spacer-gutter;
+
+    text-align: center;
+
+    &__icon{
+        margin-left: auto;
+        margin-right: auto;
+
+        max-width: 100%;
+        width: 56px;
+        height: 100%;
+    }
+    &__content{
+        font-size: map-get($map: $font-size, $key: lg);
+    }
+}
+// < 1024px
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .advantage{
+        &__content{
+            font-size: map-get($map: $font-size, $key: md);
+        }
+    }
+}

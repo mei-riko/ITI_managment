@@ -1,0 +1,31 @@
+.list_principle{
+    display: grid;
+    grid-gap: $spacer-gutter;
+    grid-template-columns: repeat(3, 1fr);
+
+    &__item{
+        font-size: map-get($map: $font-size, $key: lg);
+        margin-bottom: 0;
+    }
+}
+
+// < 1440px
+@media all and (max-width: map-get($grid-breakpoints, 'xl')){
+    .list_principle{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+// < 1024px
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .list_principle{
+        &__item{
+            font-size: map-get($map: $font-size, $key: md);
+        }
+    }
+}
+// < 576px
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .list_principle{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

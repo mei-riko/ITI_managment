@@ -1,5 +1,6 @@
 .content{
     padding: map-get($map: $spacers, $key: 5) 0;
+
     &__offer{
         font-size: map-get($map: $font-size, $key: lg);
     }
@@ -13,12 +14,18 @@
         }
     }
 }
-@media all and (max-width: map-get($grid-breakpoints, 'xs')){
+// < 1024px
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .content{
+        padding: map-get($map: $spacers, $key: 4) 0;
+    }
+}
+// < 576px
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .content{
         padding: map-get($map: $spacers, $key: 3) 0;
-
-        &__offer{
-            font-size: map-get($map: $font-size, $key: md);
-        }
+        // &__offer{
+        //     font-size: map-get($map: $font-size, $key: md);
+        // }
     }
 }
