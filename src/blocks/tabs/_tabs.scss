@@ -89,7 +89,16 @@
         }
     }
 }
-
+// < 1024px
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .tabs{
+        &__nav{
+            &_with-slider{
+                max-width: 100%;
+            }
+        }
+    }
+}
 // < 576px
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .tabs{

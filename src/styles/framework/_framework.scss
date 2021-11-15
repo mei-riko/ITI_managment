@@ -42,12 +42,7 @@ html,body {
     position: relative;
     z-index: 101;
 }
-.bg-light-grey{
-    background-color: $light-grey;
-}
-.bg-white{
-    background-color: $white;;
-}
+
 p {
     font-size: 1rem;
     margin-top: 0;
@@ -89,6 +84,8 @@ table{
 
 .bg-black{background-color: $black;}
 .bg-white{background-color: $white;}
+.bg-light-grey{background-color: $light-grey;}
+.bg-lightest-grey{background-color: $lightest-grey;}
 
 .text-white{color: $white;}
 .text-black{color: $black;}

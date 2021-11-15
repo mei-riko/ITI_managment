@@ -620,6 +620,10 @@
   }
 }
 
+.modal {
+  display: none;
+}
+
 .header {
   display: grid;
   grid-gap: 44px;
@@ -1293,6 +1297,12 @@
 
 .tabs__content--show {
   opacity: 1;
+}
+
+@media all and (max-width: 1024px) {
+  .tabs__nav_with-slider {
+    max-width: 100%;
+  }
 }
 
 @media all and (max-width: 576px) {

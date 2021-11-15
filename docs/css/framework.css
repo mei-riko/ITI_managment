@@ -1938,14 +1938,6 @@ html.hidden, body.hidden {
   z-index: 101;
 }
 
-.bg-light-grey {
-  background-color: #F6F6F6;
-}
-
-.bg-white {
-  background-color: #ffffff;
-}
-
 p {
   font-size: 1rem;
   margin-top: 0;
@@ -1994,6 +1986,14 @@ table td {
 
 .bg-white {
   background-color: #ffffff;
+}
+
+.bg-light-grey {
+  background-color: #F6F6F6;
+}
+
+.bg-lightest-grey {
+  background-color: #F8F8F8;
 }
 
 .text-white {
