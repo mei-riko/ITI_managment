@@ -34,7 +34,6 @@
 @media all and (max-width: map-get($grid-breakpoints, 'xl')){
     .header{
         grid-template-columns: 160px 1fr;
-        
     }
 }
 // < 1024px
@@ -64,6 +63,7 @@
         padding: $spacer 0;
 
         &__logo{
+            width: auto;
             height: 16px;
         }
     }

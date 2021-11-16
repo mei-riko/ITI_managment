@@ -706,6 +706,7 @@
     padding: 24px 0;
   }
   .header__logo {
+    width: auto;
     height: 16px;
   }
 }
@@ -1133,14 +1134,13 @@
 .calculator .ui-slider .ui-slider-handle {
   width: 64px;
   height: 64px;
-  top: 0;
+  top: -30px;
   border: none;
   background: transparent url("../icon/slider-handle.svg") no-repeat center/contain;
   outline: none;
-  margin-left: -32px;
-  -webkit-transform: translateY(-30px);
-  -ms-transform: translateY(-30px);
-  transform: translateY(-30px);
+  -webkit-transform: translateX(-16px);
+  -ms-transform: translateX(-16px);
+  transform: translateX(-16px);
 }
 
 .calculator .ui-slider .ui-slider-range {

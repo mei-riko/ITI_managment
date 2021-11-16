@@ -43,13 +43,13 @@
     .ui-slider .ui-slider-handle {
         width: 64px; 
         height: 64px;
-        top: 0;
+        top: -30px;
         border: none;
         background: transparent url('../icon/slider-handle.svg') no-repeat center / contain;
         outline: none;
 
-        margin-left: -32px;
-        transform: translateY(-30px);
+    //     margin-left: -32px;
+        transform: translateX(-16px);
     }
     .ui-slider .ui-slider-range {
         background: $green4;
