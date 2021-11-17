@@ -1,28 +1,17 @@
 .item{
     position: relative;
-    padding: $grid-gutter-width $grid-gutter-width 72px;
+    padding: $grid-gutter-width $grid-gutter-width;
     
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: space-between;
     width: 100%;
-
     box-sizing: border-box;
-
     border-radius: $border-radius;
-    background: $white url('../icon/svg-bg-strategy.png') no-repeat right bottom / cover;
 
-    &__open-modal{
-        position: absolute;
-        top: $grid-gutter-width;
-        right: $grid-gutter-width;
+    // background: $white url('../icon/svg-bg-strategy.png') no-repeat right bottom / cover;
 
-        transform: translateY(-8px);
-
+    &__open-icon{
         width: 32px;
         height: 32px;
-        background: url('../icon/open-modal.svg') no-repeat center / contain;
-
+        background: url('../icon/open-link.svg') no-repeat center / contain;
     }
     &__risk{
         display: grid;
@@ -30,7 +19,7 @@
         grid-gap: $spacer-gutter;
         align-items: center;
 
-        margin-bottom: map-get($map: $spacers, $key: 3);
+        // margin-bottom: map-get($map: $spacers, $key: 3);
 
         &-title{
             font-size: map-get($map: $font-size, $key: sm);
@@ -61,15 +50,14 @@
         line-height: $headings-line-height;
         font-weight: $headings-font-weight;
 
-        height: 2*map-get($map: $heading, $key: h3);
-        margin-bottom: map-get($map: $spacers, $key: 3);
+        // height: 2*map-get($map: $heading, $key: h3);
     }
     &__stats{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: $grid-gutter-width/2;
 
-        margin-bottom: map-get($map: $spacers, $key: 3);
+        margin-bottom: map-get($map: $spacers, $key: 2);
 
         &-title{
             font-size: map-get($map: $heading, $key: h3);
@@ -89,29 +77,32 @@
 }
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .item{
-        padding: map-get($map: $spacers, $key: 1) map-get($map: $spacers, $key: 1) 72px;
+        padding: map-get($map: $spacers, $key: 1);
 
+        &__title{
+            font-size: map-get($map: $heading, $key: h4);
+        }
         &__content{
             font-size: map-get($map: $font-size, $key: sm);
         }
         &__stats{
-            margin-bottom: map-get($map: $spacers, $key: 2);
+            margin-bottom: map-get($map: $spacers, $key: 1);
         }
     }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'xs')){
     .item{
-        padding: 24px 30px 66px;
+        padding: 24px 30px;
 
-        &__open-modal{
-            top: 24px;
-            right: 30px;
-        }
-        &__title{
-            height: auto;
-        }
-        &__stats{
-            margin-bottom: map-get($map: $spacers, $key: 2);
-        }
+        // &__open-modal{
+        //     top: 24px;
+        //     right: 30px;
+        // }
+        // &__title{
+        //     height: auto;
+        // }
+        // &__stats{
+        //     margin-bottom: map-get($map: $spacers, $key: 2);
+        // }
     }
 }

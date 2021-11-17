@@ -14,10 +14,14 @@
         display: block;
         margin-left: auto;
 
-        width: 500px;
-        height: auto;
-
+        // width: 500px;
         max-width: 100%;
+        height: auto;
+    }
+
+    &__image-inside{
+        width: 400px;
+        max-height: 400px;
     }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){
@@ -28,6 +32,10 @@
         &__image-inside{
             width: 360px;
             max-width: unset;
+        }
+        &__image-inside{
+            width: 360px;
+            max-height: 360px;
         }
         &__offer{
             font-size: map-get($map: $font-size, $key: lg);
@@ -61,6 +69,9 @@
         &__image-inside{
             margin-left: auto;
             margin-right: auto;
+
+            width: 260px;
+            max-height: 260px;
         }
     }
 }

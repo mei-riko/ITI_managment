@@ -1,0 +1,9 @@
+.content_titulary-inside{
+    padding-top: map-get($map: $spacers, $key: 4);
+    padding-bottom: map-get($map: $spacers, $key: 5);
+}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .content_titulary-inside{
+        padding-top: map-get($map: $spacers, $key: 3);
+    }
+}
