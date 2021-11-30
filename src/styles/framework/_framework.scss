@@ -76,6 +76,13 @@ a{
         outline: none;
     }
 }
+.link-inverse{
+    color: $link-hover-color;
+
+    &:hover {
+        color: $link-color;
+    }
+}
 table{
     td{
         padding: 8px 15px;

@@ -17,15 +17,16 @@ block content
         include ../items/slider/slider.pug
     section.content.content_strategy
         .container 
-            .row.align-items-center.align-items-md-start.flex-md-column-reverse
-                .col-7.col-lg-8.col-md-12 
+            .row.justify-content-between.align-items-center.align-items-md-start.flex-md-column-reverse
+                .col-9.col-xl-7.col-md-12 
                     h3.text-bold Поможем выбрать стратегию
                     p.content_strategy__offer.mb-2 Если вы не&nbsp;знаете, какую стратегию выбрать, или вы&nbsp;хотите узнать, 
                         | как мы&nbsp;работаем  — с&nbsp;удовольствием всё расскажем. 
                     form.form.form_strategy
-                        input.input(type="tel" data-input="phone" placeholder="Inter phone number")
+                        input.input(type="text" data-input="name" placeholder="Ваше имя")
+                        input.input(type="tel" data-input="phone" placeholder="Номер телефона")
                         button.btn.btn_action.form_strategy__btn Подобрать стратегию
-                .col-5.col-lg-4.col-md-12
+                .col-3.col-xl-4.col-md-12
                     img.content_strategy__image(src="./img/strategy.png")
     section.content
         .container

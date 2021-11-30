@@ -8,14 +8,14 @@ $green4               : #016243;
 
 $red                  : #BE4141;
 
-$lightest-grey        : #F8F8F8;
-$light-grey           : #F6F6F6;
+$lightest-grey        : #FBFBFB;
+$light-grey           : #F7F7F7;
 $grey                 : #EFEFEF;
 
 $action               : $green1;
 
 $body-color           : $black;
-$body-bg              : $white;
+$body-bg              : $lightest-grey;
 
 $border-color         : #d7d7d8;
 $border-radius        : 12px;
@@ -97,7 +97,7 @@ $spacers: map-merge(
     1: 32px,
     2: 44px,
     3: 56px,
-    4: 100px,
+    4: 90px,
     5: 120px
   ),
   $spacers

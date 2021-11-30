@@ -1,0 +1,11 @@
+.inform_heading{
+    background-color: $light-grey;
+    padding: map-get($map: $spacers, $key: 3) 0;
+}
+
+// < 1024px
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .inform_heading{
+        display: none;
+    }
+}

@@ -1,0 +1,54 @@
+.inform{
+    padding: map-get($map: $spacers, $key: 3) 0;
+
+    &__label{
+        display: none;
+        font-weight: $font-weight-bold;
+    }
+    &_even{
+        background-color: $light-grey;
+    }
+}
+
+// < 1024px
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .inform{
+        &__label{
+            display: block;
+        }
+        &__item{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: $grid-gutter-width;
+
+            margin-bottom: $spacer;
+
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+        &__label{
+            order: 1;
+        }
+        &__content{
+            order: 2;
+        }
+    }
+}
+// < 768px
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .inform{
+        &__item{
+            grid-gap: $spacer;
+        }
+    }
+}
+// < 576px
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .inform{
+        &__item{
+            grid-gap: $spacer/2;
+            grid-template-columns: 1fr;
+        }
+    }
+}

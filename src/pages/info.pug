@@ -1,0 +1,137 @@
+extends ../blocks/main.pug
+
+block variables
+    - var pageTitle = "Inform"
+block content
+    section.content.content_inform
+        .container 
+            .row.align-items-center.align-items-md-start.flex-md-column-reverse
+                .col-6.col-lg-7.col-md-12.text-sm-center
+                    h1.content_inform__heading Раскрытие информации
+                    p.content__offer.mb-2 Раскрытие информации в соответствии с Указанием Банка России от 28.12.2015 № 3921-У «О составе, объеме, порядке и сроках раскрытия информации профессиональными участниками рынка ценных бумаг»
+                .col-6.col-lg-5.col-md-12
+                    img.content_inform__image(src="./img/default.png")
+    section.inform.inform_heading
+        .container
+            .row.text-bold
+                .col-4.col-lg-12 Информация, подлежащая раскрытию
+                .col-2.col-lg-12 Дата публикации
+                .col-2.col-lg-12 Дата публикации
+                .col-4.col-lg-12 Раскрываемая информация или&nbsp;ссылка на&nbsp;страницу, где информация раскрыта
+    section.inform.inform_odd
+        .container
+            .row
+                .inform__item.col-4.col-lg-12 
+                    .inform__content Полное и сокращенное фирменное наименование Банка, в том числе на иностранном языке
+                    .inform__label Информация, подлежащая раскрытию
+                .inform__item.col-2.col-lg-12 
+                    .inform__content 23.05.2016
+                    .inform__label Дата публикации
+                .inform__item.col-2.col-lg-12 
+                    .inform__content Информация актуальна в&nbsp;настоящее время
+                    .inform__label Дата публикации
+                .inform__item.col-4.col-lg-12 
+                    .inform__content Полное наименование: Публичное акционерное общество Банк «Финансовая Корпорация Открытие»
+                        | <br>Сокращенное наименование: ПАО Банк «ФК Открытие»
+                        | <br>Полное наименование на английском языке: Public Joint-Stock Company «Bank Otkritie Financial Corporation»
+                        | <br>Сокращенное наименование на английском языке: «Bank Otkritie Financial Corporation» (Public Joint-Stock Company)
+                        | <br>Дата регистрации: 15 декабря 1992 года
+                    .inform__label Раскрываемая информация или&nbsp;ссылка на&nbsp;страницу, где информация раскрыта
+    section.inform.inform_even
+        .container
+            .inform__content.row
+                .inform__item.col-4.col-lg-12 
+                    .inform__content Идентификационный номер налогоплательщика
+                    .inform__label Информация, подлежащая раскрытию
+                .inform__item.col-2.col-lg-12
+                    .inform__content 23.05.2016
+                    .inform__label Дата публикации
+                .inform__item.col-2.col-lg-12 
+                    .inform__content Информация актуальна в&nbsp;настоящее время
+                    .inform__label Дата публикации
+                .inform__item.col-4.col-lg-12 
+                    .inform__content ИНН: 7706092528
+                    .inform__label Раскрываемая информация или&nbsp;ссылка на&nbsp;страницу, где информация раскрыта
+    section.inform.inform_odd 
+        .container
+            .inform__content.row
+                .inform__item.col-4.col-lg-12 
+                    .inform__content Адрес Банка, указанный в ЕГРЮЛ
+                    .inform__label Информация, подлежащая раскрытию
+                .inform__item.col-2.col-lg-12 
+                    .inform__content 23.05.2016
+                    .inform__label Дата публикации
+                .inform__item.col-2.col-lg-12 
+                    .inform__content Информация актуальна в&nbsp;настоящее время
+                    .inform__label Дата публикации
+                .inform__item.col-4.col-lg-12 
+                    .inform__content Юридический адрес: 115114, г. Москва, ул. Летниковская, д. 2, стр. 4
+                        | <br>Фактический адрес: 115114, г. Москва, ул. Летниковская, д. 2, стр. 4
+                        | <br>Почтовый адрес: 115114, г. Москва, ул. Летниковская, д. 2, стр. 4
+                    .inform__label Раскрываемая информация или&nbsp;ссылка на&nbsp;страницу, где информация раскрыта
+    section.inform.inform_even
+        .container
+            .inform__content.row
+                .inform__item.col-4.col-lg-12 
+                    .inform__content Номер телефона, факса Банка
+                    .inform__label Информация, подлежащая раскрытию
+                .inform__item.col-2.col-lg-12 
+                    .inform__content 23.05.2016
+                    .inform__label Дата публикации
+                .inform__item.col-2.col-lg-12 
+                    .inform__content Информация актуальна в&nbsp;настоящее время
+                    .inform__label Дата публикации
+                .inform__item.col-4.col-lg-12
+                    .inform__content  Телефон: 8 (495) 224-44-00,
+                        | <br>Факс: 8 (495) 797-32-50
+                    .inform__label Раскрываемая информация или&nbsp;ссылка на&nbsp;страницу, где информация раскрыта
+    section.inform.inform_odd 
+        .container
+            .inform__content.row
+                .inform__item.col-4.col-lg-12 
+                    .inform__content Адрес электронной почты Банка
+                    .inform__label Информация, подлежащая раскрытию
+                .inform__item.col-2.col-lg-12 
+                    .inform__content 23.05.2016
+                    .inform__label Дата публикации
+                .inform__item.col-2.col-lg-12 
+                    .inform__content Информация актуальна в&nbsp;настоящее время
+                    .inform__label Дата публикации
+                .inform__item.col-4.col-lg-12 
+                    .inform__content E-mail: 
+                        a(href="mailto:info@open.ru") info@open.ru
+                    .inform__label Раскрываемая информация или&nbsp;ссылка на&nbsp;страницу, где информация раскрыта
+    section.inform.inform_even 
+        .container
+            .inform__content.row
+                .inform__item.col-4.col-lg-12 
+                    .inform__content Фамилия, имя, отчество лица, временно исполняющего функции единоличного исполнительного органа Банка в случае назначения его на должность на срок, превышающий два месяца
+                    .inform__label Информация, подлежащая раскрытию
+                .inform__item.col-2.col-lg-12 
+                    .inform__content 01.01.2018
+                    .inform__label Дата публикации
+                .inform__item.col-2.col-lg-12 
+                    .inform__content Информация актуальна в&nbsp;настоящее время
+                    .inform__label Дата публикации
+                .inform__item.col-4.col-lg-12 
+                    .inform__content Основание для раскрытия информации отсутствует
+                    .inform__label Раскрываемая информация или&nbsp;ссылка на&nbsp;страницу, где информация раскрыта
+    section.inform.inform_odd 
+        .container
+            .inform__content.row
+                .inform__item.col-4.col-lg-12 
+                    .inform__content Электронные копии всех лицензий Банка на осуществление профессиональной деятельности на рынке ценных бумаг.
+                    .inform__label Информация, подлежащая раскрытию
+                .inform__item.col-2.col-lg-12 
+                    .inform__content 03.09.2016
+                    .inform__label Дата публикации
+                .inform__item.col-2.col-lg-12 
+                    .inform__content Информация актуальна в&nbsp;настоящее время
+                    .inform__label Дата публикации
+                .inform__item.col-4.col-lg-12 
+                    .inform__content 
+                        a.link-inverse(href="https://www.open.ru/about/license") https://www.open.ru/about/license
+                    .inform__label Раскрываемая информация или&nbsp;ссылка на&nbsp;страницу, где информация раскрыта
+    
+block footer
+    //- script(src="https://unpkg.com/swiper@7/swiper-bundle.min.js")

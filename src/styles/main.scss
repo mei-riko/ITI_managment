@@ -29,6 +29,9 @@
 
 @import "../items/modal/modal";
 
+@import "../items/inform/inform";
+@import "../items/inform/inform_heading";
+
 @import "../blocks/header/header.scss";
 @import "../blocks/footer/footer.scss";
 
@@ -40,6 +43,7 @@
 @import "../blocks/content/content_strategy";
 @import "../blocks/content/content_props";
 @import "../blocks/content/content_about";
+@import "../blocks/content/content_inform";
 
 @import "../blocks/calculator/calculator";
 

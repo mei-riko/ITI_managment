@@ -24,7 +24,7 @@ body {
   line-height: 1.4;
   color: #1A1A1A;
   text-align: left;
-  background: #ffffff;
+  background: #FBFBFB;
 }
 
 [tabindex="-1"]:focus {
@@ -1976,6 +1976,14 @@ a:focus {
   outline: none;
 }
 
+.link-inverse {
+  color: #00C172;
+}
+
+.link-inverse:hover {
+  color: #1A1A1A;
+}
+
 table td {
   padding: 8px 15px;
 }
@@ -1989,11 +1997,11 @@ table td {
 }
 
 .bg-light-grey {
-  background-color: #F6F6F6;
+  background-color: #F7F7F7;
 }
 
 .bg-lightest-grey {
-  background-color: #F8F8F8;
+  background-color: #FBFBFB;
 }
 
 .text-white {
@@ -2332,7 +2340,7 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
 }
 
 .mt-4 {
-  margin-top: 100px;
+  margin-top: 90px;
 }
 
 .mt-5 {
@@ -2356,7 +2364,7 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
 }
 
 .mb-4 {
-  margin-bottom: 100px;
+  margin-bottom: 90px;
 }
 
 .mb-5 {
@@ -2380,7 +2388,7 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
 }
 
 .pt-4 {
-  padding-top: 100px;
+  padding-top: 90px;
 }
 
 .pt-5 {
@@ -2404,7 +2412,7 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
 }
 
 .pb-4 {
-  padding-bottom: 100px;
+  padding-bottom: 90px;
 }
 
 .pb-5 {
@@ -2425,7 +2433,7 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
     margin-top: 56px;
   }
   .mt-xl-4 {
-    margin-top: 100px;
+    margin-top: 90px;
   }
   .mb-xl-0 {
     margin-bottom: 0;
@@ -2440,7 +2448,7 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
     margin-bottom: 56px;
   }
   .mb-xl-4 {
-    margin-bottom: 100px;
+    margin-bottom: 90px;
   }
   .pt-xl-0 {
     padding-top: 0;
@@ -2455,7 +2463,7 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
     padding-top: 56px;
   }
   .pt-xl-4 {
-    padding-top: 100px;
+    padding-top: 90px;
   }
   .pb-xl-0 {
     padding-bottom: 0;
@@ -2470,7 +2478,7 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
     padding-bottom: 56px;
   }
   .pb-xl-4 {
-    padding-bottom: 100px;
+    padding-bottom: 90px;
   }
 }
 
@@ -2488,7 +2496,7 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
     margin-top: 56px;
   }
   .mt-lg-4 {
-    margin-top: 100px;
+    margin-top: 90px;
   }
   .mb-lg-0 {
     margin-bottom: 0;
@@ -2503,7 +2511,7 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
     margin-bottom: 56px;
   }
   .mb-lg-4 {
-    margin-bottom: 100px;
+    margin-bottom: 90px;
   }
   .pt-lg-0 {
     padding-top: 0;
@@ -2518,7 +2526,7 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
     padding-top: 56px;
   }
   .pt-lg-4 {
-    padding-top: 100px;
+    padding-top: 90px;
   }
   .pb-lg-0 {
     padding-bottom: 0;
@@ -2533,7 +2541,7 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
     padding-bottom: 56px;
   }
   .pb-lg-4 {
-    padding-bottom: 100px;
+    padding-bottom: 90px;
   }
 }
 
@@ -2551,7 +2559,7 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
     margin-top: 56px;
   }
   .mt-md-4 {
-    margin-top: 100px;
+    margin-top: 90px;
   }
   .mb-md-0 {
     margin-bottom: 0;
@@ -2566,7 +2574,7 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
     margin-bottom: 56px;
   }
   .mb-md-4 {
-    margin-bottom: 100px;
+    margin-bottom: 90px;
   }
   .pt-md-0 {
     padding-top: 0;
@@ -2581,7 +2589,7 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
     padding-top: 56px;
   }
   .pt-md-4 {
-    padding-top: 100px;
+    padding-top: 90px;
   }
   .pb-md-0 {
     padding-bottom: 0;
@@ -2596,7 +2604,7 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
     padding-bottom: 56px;
   }
   .pb-md-4 {
-    padding-bottom: 100px;
+    padding-bottom: 90px;
   }
 }
 
@@ -2614,7 +2622,7 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
     margin-top: 56px;
   }
   .mt-sm-4 {
-    margin-top: 100px;
+    margin-top: 90px;
   }
   .mb-sm-0 {
     margin-bottom: 0;
@@ -2629,7 +2637,7 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
     margin-bottom: 56px;
   }
   .mb-sm-4 {
-    margin-bottom: 100px;
+    margin-bottom: 90px;
   }
   .pt-sm-0 {
     padding-top: 0;
@@ -2644,7 +2652,7 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
     padding-top: 56px;
   }
   .pt-sm-4 {
-    padding-top: 100px;
+    padding-top: 90px;
   }
   .pb-sm-0 {
     padding-bottom: 0;
@@ -2659,7 +2667,7 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
     padding-bottom: 56px;
   }
   .pb-sm-4 {
-    padding-bottom: 100px;
+    padding-bottom: 90px;
   }
 }
 
@@ -2677,7 +2685,7 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
     margin-top: 56px;
   }
   .mt-xs-4 {
-    margin-top: 100px;
+    margin-top: 90px;
   }
   .mb-xs-0 {
     margin-bottom: 0;
@@ -2692,7 +2700,7 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
     margin-bottom: 56px;
   }
   .mb-xs-4 {
-    margin-bottom: 100px;
+    margin-bottom: 90px;
   }
   .pt-xs-0 {
     padding-top: 0;
@@ -2707,7 +2715,7 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
     padding-top: 56px;
   }
   .pt-xs-4 {
-    padding-top: 100px;
+    padding-top: 90px;
   }
   .pb-xs-0 {
     padding-bottom: 0;
@@ -2722,38 +2730,27 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
     padding-bottom: 56px;
   }
   .pb-xs-4 {
-    padding-bottom: 100px;
+    padding-bottom: 90px;
   }
 }
 
 @font-face {
   font-family: 'Factor A';
-  src: url("../fonts/FactorALight-Regular.eot");
-  src: local("Factor A Light Regular"), local("FactorALight-Regular"), url("../fonts/FactorALight-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/FactorALight-Regular.woff2") format("woff2"), url("../fonts/FactorALight-Regular.woff") format("woff"), url("../fonts/FactorALight-Regular.ttf") format("truetype");
-  font-weight: 300;
+  src: url("../fonts/Factor A-Regular-Web.woff2") format("woff2"), url("../fonts/Factor A-Regular-Web.woff") format("woff"), url("../fonts/Factor A-Regular-Web.ttf") format("truetype");
+  font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Factor A';
-  src: url("../fonts/FactorA-Regular.eot");
-  src: local("Factor A Regular"), local("FactorA-Regular"), url("../fonts/FactorA-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/FactorA-Regular.woff2") format("woff2"), url("../fonts/FactorA-Regular.woff") format("woff"), url("../fonts/FactorA-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Factor A';
-  src: url("../fonts/FactorAMedium-Regular.eot");
-  src: local("Factor A Medium Regular"), local("FactorAMedium-Regular"), url("../fonts/FactorAMedium-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/FactorAMedium-Regular.woff2") format("woff2"), url("../fonts/FactorAMedium-Regular.woff") format("woff"), url("../fonts/FactorAMedium-Regular.ttf") format("truetype");
+  src: url("../fonts/Factor A-Medium-Web.woff2") format("woff2"), url("../fonts/Factor A-Medium-Web.woff") format("woff"), url("../fonts/Factor A-Medium-Web.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Factor A';
-  src: url("../fonts/FactorA-Bold.eot");
-  src: local("Factor A Bold"), local("FactorA-Bold"), url("../fonts/FactorA-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/FactorA-Bold.woff2") format("woff2"), url("../fonts/FactorA-Bold.woff") format("woff"), url("../fonts/FactorA-Bold.ttf") format("truetype");
-  font-weight: bold;
+  src: url("../fonts/Factor A-Bold-Web.woff2") format("woff2"), url("../fonts/Factor A-Bold-Web.woff") format("woff"), url("../fonts/Factor A-Bold-Web.ttf") format("truetype");
+  font-weight: 700;
   font-style: normal;
 }
