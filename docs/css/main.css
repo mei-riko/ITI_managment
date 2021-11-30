@@ -47,10 +47,11 @@
 
 @media all and (max-width: 1440px) {
   .nav__item {
-    padding: 0 14px;
+    font-size: 14px;
+    padding: 0 10px;
   }
   .nav__sep {
-    margin: 0 14px;
+    margin: 0 10px;
   }
 }
 

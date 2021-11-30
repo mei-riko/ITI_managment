@@ -40,11 +40,13 @@
 @media all and (max-width: map-get($grid-breakpoints, 'xl')){
     .nav{
         &__item{
-            // font-size: 14px;
-            padding: 0 14px;
+            font-size: 14px;
+            padding: 0 10px;
+            // padding: 0 14px;
         }
         &__sep{
-            margin: 0 14px;
+            margin: 0 10px;
+            // margin: 0 14px;
         }
     }
 }

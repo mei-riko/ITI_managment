@@ -25,7 +25,7 @@ $(window).on("resize", function(){
     if ( $(window).width() > 1024 || !window.matchMedia('screen and (max-width: 1024px)').matches ){
         if( $('nav.nav').hasClass('nav--open')){
             navbarMobileClose('nav.nav');
-            $('nav.nav').removeAttr('style');
         }
+        $('nav.nav').removeAttr('style');
     }
 });
