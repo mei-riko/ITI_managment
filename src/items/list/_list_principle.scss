@@ -1,6 +1,7 @@
 .list_principle{
     display: grid;
-    grid-gap: $spacer-gutter;
+    grid-gap: map-get($map: $spacers, $key: 1);
+    // grid-gap: $spacer-gutter;
     grid-template-columns: repeat(3, 1fr);
 
     &__item{

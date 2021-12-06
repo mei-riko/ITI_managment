@@ -1,0 +1,6 @@
+.document{
+    &__info{
+        background: url('../icon/file.svg') no-repeat left center / 18px;
+        padding-left: map-get($map: $spacers, $key: 1);
+    }
+}

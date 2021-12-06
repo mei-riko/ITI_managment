@@ -1996,6 +1996,10 @@ table td {
   background-color: #ffffff;
 }
 
+.bg-grey {
+  background-color: #EFEFEF;
+}
+
 .bg-light-grey {
   background-color: #F7F7F7;
 }

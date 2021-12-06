@@ -14,15 +14,20 @@
         font-weight: $font-weight-bold;
         color: $green1;
     }
-    &__image{
-        display: block;
-        margin-left: auto;
-
-        width: 450px;
-        height: auto;
-
-        max-width: 100%;
+    &__icon{
+        width: auto;
+        height: 50px;
+        margin-bottom: 2*$spacer-gutter;
     }
+    // &__image{
+    //     display: block;
+    //     margin-left: auto;
+
+    //     width: 450px;
+    //     height: auto;
+
+    //     max-width: 100%;
+    // }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'xl')){
     .content_trust{
@@ -36,18 +41,18 @@
         padding: map-get($map: $spacers, $key: 3) 0;
         overflow: hidden;
 
-        &__image{
-            max-width: unset;
-        }
+        // &__image{
+        //     max-width: unset;
+        // }
     }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'md')){
     .content_trust{
-        &__image{
-            margin-left: 0;
-            margin-bottom: map-get($map: $spacers, $key: 3);
-            max-width: 100%;
-        }
+        // &__image{
+        //     margin-left: 0;
+        //     margin-bottom: map-get($map: $spacers, $key: 3);
+        //     max-width: 100%;
+        // }
     }
 }
 // < 576px

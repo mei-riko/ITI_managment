@@ -12,8 +12,8 @@
         font-weight: $font-weight-bold;
     }
     &__link{
-        color: $green3;
         font-weight: $font-weight-bold;
+        color: $green3;
     }
 
     &__result{
@@ -22,12 +22,64 @@
         margin-top: map-get($map: $spacers, $key: 2);
     }
     &__return{
-        
+        position: relative;
     }
     &__ready{
         display: flex;
         justify-content: flex-end;
         align-items: center;
+    }
+
+    // Modal
+    &__modal{
+        display: none;
+
+        position: absolute;
+        top: -(map-get($map: $spacers, $key: 5));
+        left: -(map-get($map: $spacers, $key: 4));
+        z-index: 21;
+
+        width: 375px;
+        max-width: 100vw;
+
+        font-weight: $font-weight-base;
+        color: $black;
+
+        border: 1px solid $green2;
+        border-radius: $border-radius;
+        background: $white;
+        padding: 2*$spacer-gutter map-get($map: $spacers, $key: 1);
+
+        &-close{
+            position: absolute;
+            top: 2*$spacer-gutter;
+            right: map-get($map: $spacers, $key: 1);
+            z-index: 11;
+
+            width: 24px;
+            height: 24px;
+
+            background: url("../icon/close_black.svg") no-repeat center / 18px;
+            cursor: pointer;
+
+            transition: $transition-base;
+
+            &:hover{
+                filter: opacity(.6);
+            }
+        }
+        &-label{
+            color: $black;
+            filter: opacity(.6);
+            text-transform: uppercase;
+            margin-bottom: map-get($map: $spacers, $key: 1);
+            font-size: map-get($map: $font-size, $key: xs);
+        }
+        &-heading{
+            font-size: map-get($map: $font-size, $key: lg);
+            font-weight: $font-weight-bolder;
+            margin-bottom: $spacer-gutter;
+        }
     }
 
     // UI Slider
@@ -90,6 +142,9 @@
         &__ready-btn{
             width: auto;
         }
+        &__modal{
+            padding: 2*$spacer-gutter;
+        }
     }
 }
 // < 576px
@@ -102,6 +157,11 @@
         }
         &__result{
             grid-template-columns: 1fr;
+        }
+
+        &__modal{
+            left: 0;
+            max-width: 100%;
         }
     }
 }

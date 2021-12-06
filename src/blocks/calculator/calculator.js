@@ -49,4 +49,16 @@ $(function() {
             }
         });
     }
+
+    $(".calculator .calculator__link").on('click', function(e){
+        e.preventDefault();
+        $(".calculator .calculator__modal").addClass('calculator__modal--active');
+        $(".calculator .calculator__modal").slideDown();
+    });
+
+    $(".calculator .calculator__modal .calculator__modal-close").on('click', function(e){
+        e.preventDefault();
+        $(".calculator .calculator__modal").removeClass('calculator__modal--active');
+        $(".calculator .calculator__modal").slideUp();
+    });
 });

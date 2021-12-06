@@ -11,50 +11,61 @@ block content
                     p.content__offer.mb-2 ITI Менеджмент — современная управляющая компания с сильнейшей командой аналитиков. Доверяя нам свои деньги, вы получаете наш опыт, экспертизу и безусловный профессионализм.
                 .col-6.col-lg-4.col-md-12
                     img.content_inform__image.content_inform__image-inside(src="./img/default.png")
-    section.content.bg-light-grey
+    //- section.content.bg-light-grey
+    //-     .container 
+    //-         .blockquote
+    //-             img.blockquote__img(src="../icon/check.svg")
+    //-             p.blockquote__text Мы предлагаем индивидуальный подход и эффективные решения, потому что мы уверены в своих силах и умении действовать для достижения лучших результатов. Всё просто: вы знаете свои цели, а мы знаем, как их реализовать.
+    section.content.content_trust.bg-light-grey
         .container 
-            .blockquote
-                img.blockquote__img(src="../icon/check.svg")
-                p.blockquote__text Мы предлагаем индивидуальный подход и эффективные решения, потому что мы уверены в своих силах и умении действовать для достижения лучших результатов. Всё просто: вы знаете свои цели, а мы знаем, как их реализовать.
-    section.content.content_trust
-        .container 
-            .row.align-items-center.align-items-md-start.flex-md-column-reverse
+            .row.mb-1
                 .col-7.col-xl-7.col-lg-8.col-md-12 
-                    p.h2.mb-3 Направление <br/>деятельности
+                    p.h2.mb-1 Направление <br/>деятельности
+                    p.content__offer Мы предлагаем индивидуальный подход и эффективные решения, потому что мы уверены в своих силах и умении действовать для достижения лучших результатов. Всё просто: вы знаете свои цели, а мы знаем, как их реализовать.
+            .row
+                .col-4.col-xl-6.col-sm-12.mt-3.mt-sm-1
+                    img.content_trust__icon.img-fluid(src="./icon/person.svg")
                     p.content__offer Индивидуальное доверительное управление активами
+                .col-4.col-xl-6.col-sm-12.mt-3.mt-sm-1
+                    img.content_trust__icon.img-fluid(src="./icon/circle.svg")
                     p.content__offer 
-                        span.content_trust__label Скоро
                         | Управление активами паевых инвестиционных фондов
-                    p.content__offer 
                         span.content_trust__label Скоро
+                .col-4.col-xl-6.col-sm-12.mt-3.mt-sm-1
+                    img.content_trust__icon.img-fluid(src="./icon/dots.svg")
+                    p.content__offer 
                         | Создание закрытых паевых инвестиционных фондов и управление их активами
-                .col-5.col-xl-5.col-lg-4.col-md-12
-                    img.content_trust__image(src="./img/strategy.png")
-    section.content.bg-light-grey
+                        span.content_trust__label Скоро
+    section.content
         .container 
-            p.h2.text-center.mb-0 Преимущества
-            .row.justify-content-center 
-                .col-4.col-lg-6.col-sm-12.mt-3.mt-sm-1
-                    .advantage
-                        img.advantage__icon(src="./icon/plus.svg")
-                        .advantage__content Современные технологии управления финансами
-                .col-4.col-lg-6.col-sm-12.mt-3.mt-sm-1
+            p.h2 Преимущества
+            .row 
+                .col-4.col-xl-6.col-sm-12.mt-3.mt-sm-1
                     .advantage
                         img.advantage__icon(src="./icon/check.svg")
+                        .advantage__title Технологии
+                        .advantage__content Современные технологии управления финансами
+                .col-4.col-xl-6.col-sm-12.mt-3.mt-sm-1
+                    .advantage
+                        img.advantage__icon(src="./icon/check.svg")
+                        .advantage__title Управление
                         .advantage__content Технологичность в управлении бизнес-процессами
-                .col-4.col-lg-6.col-sm-12.mt-3.mt-sm-1
+                .col-4.col-xl-6.col-sm-12.mt-3.mt-sm-1
                     .advantage
-                        img.advantage__icon(src="./icon/team.svg")
+                        img.advantage__icon(src="./icon/check.svg")
+                        .advantage__title Команда
                         .advantage__content Сильнейшая команда аналитиков
-                .col-4.col-lg-6.col-sm-12.mt-3.mt-sm-1
+                .col-4.col-xl-6.col-sm-12.mt-3.mt-sm-1
                     .advantage
-                        img.advantage__icon(src="./icon/arrow.svg")
+                        img.advantage__icon(src="./icon/check.svg")
+                        .advantage__title Скорость
                         .advantage__content Высокая скорость принятия решений
-                .col-4.col-lg-6.col-sm-12.mt-3.mt-sm-1
+                .col-4.col-xl-6.col-sm-12.mt-3.mt-sm-1
                     .advantage
-                        img.advantage__icon(src="./icon/circle.svg")
+                        img.advantage__icon(src="./icon/check.svg")
+                        .advantage__title Поддержка
                         .advantage__content Полная поддержка клиентов 24/7
-    section.content
+    section.content.bg-grey
         .container 
             p.h2.mb-3.mb-sm-1 Принципы компании
             .list.list_principle

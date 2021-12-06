@@ -1,21 +1,24 @@
 .advantage{
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 56px 1fr;
-    grid-gap: 2*$spacer-gutter;
+    grid-template-columns: 56px 1fr;
+    grid-gap: $spacer-gutter;
 
-    text-align: center;
+    // text-align: center;
 
     &__icon{
-        margin-left: auto;
-        margin-right: auto;
-
         max-width: 100%;
-        width: 56px;
+        width: 44px;
         height: 100%;
     }
-    &__content{
+    &__title{
         font-size: map-get($map: $font-size, $key: lg);
+        font-weight: $font-weight-bolder;
+    }
+    &__content{
+        font-size: map-get($map: $font-size, $key: md);
+
+        grid-column-start: 2;
+        grid-column-end: 3;
     }
 }
 // < 1024px
