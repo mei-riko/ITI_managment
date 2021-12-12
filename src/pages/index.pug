@@ -17,17 +17,17 @@ block content
         include ../items/slider/slider.pug
     section.content.content_strategy
         .container 
-            .row.justify-content-between.align-items-center.align-items-md-start.flex-md-column-reverse
-                .col-9.col-xl-7.col-md-12 
+            .row.justify-content-between.flex-md-column-reverse.align-items-center
+                .col-9.col-xl-7.col-lg-8.col-md-10.col-sm-12
                     h3.text-bold Поможем выбрать стратегию
-                    p.content_strategy__offer.mb-2 Если вы не&nbsp;знаете, какую стратегию выбрать, или вы&nbsp;хотите узнать, 
+                    p.content_strategy__offer Если вы не&nbsp;знаете, какую стратегию выбрать, или вы&nbsp;хотите узнать, 
                         | как мы&nbsp;работаем  — с&nbsp;удовольствием всё расскажем. 
                     form.form.form_strategy
                         input.input(type="text" data-input="name" placeholder="Ваше имя")
                         input.input(type="tel" data-input="phone" placeholder="Номер телефона")
                         button.btn.btn_action.form_strategy__btn Подобрать стратегию
-                .col-3.col-xl-4.col-md-12
-                    img.content_strategy__image(src="./img/strategy.png")
+                .col-3.col-xl-4.col-lg-4.col-md-10.col-sm-12
+                    img.content_strategy__image(src="./img/img-cta-block.svg")
     section.content
         .container
             .pb-2
@@ -51,13 +51,13 @@ block content
                         p.info__content Доверительное управление — это возможность заработать больше, чем при открытии банковского вклада или вложении в паевые фонды. Вам не нужно вникать в тонкости инвестиционной деятельности. Индивидуальный подход и широкие возможности для инвестиций, а значит, более высокий доход.
     section.content.content_trust.bg-light-grey 
         .container 
-            .row.align-items-center.align-items-md-start.flex-md-column-reverse
-                .col-6.col-xl-7.col-lg-8.col-md-12 
+            .row.justify-content-between.flex-md-column-reverse
+                .col-6.col-xl-6.col-lg-7.col-md-12 
                     p.h2.content_trust__heading-form О компании
                     p.content__offer.text-bold.mb-1 С нами инвестиции — это просто.
                     p.content__offer.mb-1 ITI Менеджмент — современная управляющая компания. Наша специализация — финансовые и инвестиционные услуги физическим лицам. Мы профессионально и эффективно управляем вашими средствами, помогая вам стабильно увеличивать доход. 
                     a.content_trust__link(href="#") Подробнее
-                .col-6.col-xl-5.col-lg-4.col-md-12
-                    img.content_trust__image(src="./img/default.png")
+                .col-5.col-xl-6.col-lg-5.col-md-12
+                    img.content_trust__image(src="./img/img-company-block.svg")
 block footer
     script(src="https://unpkg.com/swiper@7/swiper-bundle.min.js")

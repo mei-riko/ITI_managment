@@ -18,6 +18,18 @@
     &__content{
         background: #F6F6F6;
         padding: 64px 0 map-get($map: $spacers, $key: 5);
+
+        margin-top: -($spacer-gutter);
+    }
+}
+// < 1440px
+@media all and (max-width: map-get($grid-breakpoints, 'xl')){
+    .content_about{
+        &__nav{
+            &:after{
+                transform: translateY(-28px);
+            }
+        }
     }
 }
 // < 768px
@@ -43,6 +55,7 @@
         }
         &__content{
             padding: map-get($map: $spacers, $key: 3) 0;
+            margin-top: -($spacer);
         }
     }
 }

@@ -1,0 +1,13 @@
+.list_numeric{
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    grid-gap: $spacer-gutter;
+
+    margin-bottom: $spacer;
+}
+
+.list_numeric-heading{
+    font-weight: $font-weight-bold;
+    margin-top: map-get($map: $spacers, $key: 3);
+    margin-bottom: map-get($map: $spacers, $key: 1);
+}

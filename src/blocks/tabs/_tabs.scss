@@ -51,9 +51,9 @@
     
             border-radius: 0;
             border: none;
-            border-bottom: 4px solid $white;
+            border-bottom: 4px solid rgba(255,255,255,0);
     
-            padding: 24px 0;
+            padding: $spacer 0;
             
             &:hover{
                 border-color: $white;
@@ -102,18 +102,18 @@
 // < 576px
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .tabs{
-        // &__nav{
-        //     max-width: 100%;
-        //     padding-bottom: $spacer-gutter;
+        &__nav{
+            // max-width: 100%;
+            padding-bottom: $spacer;
         //     overflow: scroll;
-        // }
+        }
         &__item{
             padding: 8px 16px;
 
             &_inside{
                 font-size: map-get($map: $font-size, $key: md);
-                padding: 14px 0;
-                margin-bottom: -12px;
+                padding: $spacer-gutter  0;
+                margin-bottom: -($spacer-gutter);
                 margin-right: map-get($map: $spacers, $key: 1);
             }
         }

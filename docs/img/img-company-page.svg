@@ -1,0 +1,7 @@
+<svg width="440" height="344" viewBox="0 0 440 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="60" height="260" rx="30" fill="#EFEFEF"/>
+<rect x="190" y="151" width="60" height="193" rx="30" fill="#009657"/>
+<rect x="380" width="60" height="344" rx="30" fill="#016243"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M320 60C336.569 60 350 46.5686 350 30C350 13.4315 336.569 7.82523e-06 320 7.82523e-06H250H190L122 0C105.431 -1.90666e-06 92 13.4315 92 30C92 46.5685 105.431 60 122 60L160 60C176.569 60 190 73.4315 190 90V97C190 113.569 203.431 127 220 127C236.569 127 250 113.569 250 97V90C250 73.4315 263.431 60 280 60L320 60Z" fill="#EFEFEF"/>
+<circle cx="30" cy="314" r="30" fill="#00C172"/>
+</svg>

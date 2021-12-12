@@ -22,6 +22,7 @@
 
 @import "../items/list/list";
 @import "../items/list/list_principle";
+@import "../items/list/list_numeric";
 
 @import "../items/advantage/advantage";
 
@@ -33,6 +34,8 @@
 
 @import "../items/inform/inform";
 @import "../items/inform/inform_heading";
+
+@import "../items/toggle/toggle";
 
 @import "../blocks/header/header.scss";
 @import "../blocks/footer/footer.scss";

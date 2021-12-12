@@ -1,9 +1,12 @@
 .content_strategy{
     background: $grey;
+    padding: map-get($map: $spacers, $key: 4) 0;
 
     &__offer{
         width: 610px;
         max-width: 100%;
+
+        margin-bottom: map-get($map: $spacers, $key: 2);
     }
     &__image{
         display: block;
@@ -15,24 +18,37 @@
         max-width: 100%;
     }
 }
+// < 1024px
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){
     .content_strategy{
         overflow: hidden;
 
+        &__offer{
+            margin-bottom: map-get($map: $spacers, $key: 1);
+        }
         &__image{
-            max-width: unset;
+            // max-width: unset;
         }
     }
 }
+// < 768px
 @media all and (max-width: map-get($grid-breakpoints, 'md')){
     .content_strategy{
-        // padding-bottom: map-get($map: $spacers, $key: 3);
+        &__offer{
+            margin-bottom: $spacer-gutter;
+        }
         &__image{
-            max-width: 100%;
-            margin-left: 0;
-            margin-bottom: map-get($map: $spacers, $key: 3);
+            // max-width: 100%;
+            width: 280px;
+            margin: 0 auto map-get($map: $spacers, $key: 3);
         }
         
+    }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .content_strategy{
+        padding: map-get($map: $spacers, $key: 3) 0;
     }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'xs')){

@@ -13,7 +13,7 @@
         display: block;
         margin-left: auto;
 
-        width: 450px;
+        width: 440px;
         max-width: 100%;
         height: auto;
     }
@@ -24,7 +24,7 @@
         
         &__image{
             width: 360px;
-            max-width: unset;
+            // max-width: unset;
         }
         &__offer{
             font-size: map-get($map: $font-size, $key: lg);
