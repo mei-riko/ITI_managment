@@ -45,11 +45,4 @@
     }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
-    .content_titulary{
-        padding-bottom: map-get($map: $spacers, $key: 3);
-
-        &__image{
-            margin-bottom: map-get($map: $spacers, $key: 2);
-        }
-    }
 }
