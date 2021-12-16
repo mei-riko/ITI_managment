@@ -30,6 +30,11 @@
     }
 }
 
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .item_strategy{
+        padding: $spacer;
+    }
+}
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .item_strategy{
         &__footer{

@@ -267,10 +267,6 @@
   }
 }
 
-.info {
-  text-align: center;
-}
-
 .info__image {
   margin-bottom: 56px;
 }
@@ -445,6 +441,12 @@
   margin-top: 90px;
 }
 
+@media all and (max-width: 1024px) {
+  .item_strategy {
+    padding: 24px;
+  }
+}
+
 @media all and (max-width: 576px) {
   .item_strategy__footer {
     margin-top: 56px;
@@ -582,6 +584,7 @@
 }
 
 .slider__arrow {
+  display: none;
   position: absolute;
   top: 0;
   cursor: pointer;
@@ -628,6 +631,12 @@
   align-items: stretch;
 }
 
+@media all and (max-width: 1440px) {
+  .slider__grid:not(.swiper-wrapper) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media all and (max-width: 1024px) {
   .slider__slide.swiper-slide {
     width: 390px;
@@ -647,10 +656,7 @@
 }
 
 .slider_inside {
-  padding-top: 112px;
-  -webkit-transform: translateY(-48px);
-  -ms-transform: translateY(-48px);
-  transform: translateY(-48px);
+  padding-top: 44px;
 }
 
 .slider_inside.swiper-initialized {
@@ -659,10 +665,7 @@
 
 @media all and (max-width: 576px) {
   .slider_inside {
-    padding-top: 44px;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
+    padding-top: 32px;
   }
 }
 
@@ -2018,6 +2021,9 @@
     -ms-transform: translateY(-28px);
     transform: translateY(-28px);
   }
+  .content_about__content {
+    margin-top: -28px;
+  }
 }
 
 @media all and (max-width: 768px) {
@@ -2032,7 +2038,6 @@
   }
   .content_about__content {
     padding: 56px 0;
-    margin-top: -24px;
   }
 }
 
@@ -2097,6 +2102,7 @@
   color: #00C172;
   font-size: 64px;
   font-weight: 700;
+  white-space: nowrap;
 }
 
 .calculator__link {
@@ -2204,10 +2210,16 @@
   height: 8px;
 }
 
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1440px) {
   .calculator__title {
     font-size: 18px;
   }
+  .calculator__num {
+    font-size: 52px;
+  }
+}
+
+@media all and (max-width: 1024px) {
   .calculator__num {
     font-size: 48px;
   }
@@ -2362,6 +2374,12 @@
   opacity: 1;
 }
 
+@media all and (max-width: 1440px) {
+  .tabs__item_inside {
+    margin-right: 44px;
+  }
+}
+
 @media all and (max-width: 1024px) {
   .tabs__nav_with-slider {
     max-width: 100%;
@@ -2405,7 +2423,7 @@
   filter: opacity(0.6);
 }
 
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1440px) {
   .props {
     grid-template-columns: repeat(3, 1fr);
   }

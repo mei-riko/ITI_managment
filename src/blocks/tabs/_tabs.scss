@@ -88,6 +88,17 @@
             opacity: 1;
         }
     }
+
+}
+// < 1440px
+@media all and (max-width: map-get($grid-breakpoints, 'xl')){
+    .tabs{
+        &__item{
+            &_inside{
+                margin-right: map-get($map: $spacers, $key: 2);
+            }
+        }
+    }
 }
 // < 1024px
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){

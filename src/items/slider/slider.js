@@ -20,56 +20,56 @@ const sliderUnit = ( elem ) => {
                     // Optional parameters
                     loop: false,
                     slidesPerView: 1,
-                    spaceBetween: 10,
+                    spaceBetween: 20,
                     navigation: {
                         nextEl: '.slider__arrow_next',
                         prevEl: '.slider__arrow_prev',
                     },
                     
                     breakpoints: {
-                        376: {
-                            // slidesPerView: 1,
-                            slidesPerView: 'auto',
-                            spaceBetween: 20,
-                        },
+                    //     376: {
+                    //         // slidesPerView: 1,
+                    //         slidesPerView: 'auto',
+                    //         spaceBetween: 20,
+                    //     },
+                    //     577: {
+                    //         // slidesPerView: 1,
+                    //         slidesPerView: 'auto',
+                    //         spaceBetween: 20,
+                    //     },
                         577: {
-                            // slidesPerView: 1,
-                            slidesPerView: 'auto',
-                            spaceBetween: 20,
-                        },
-                        769: {
-                            // slidesPerView: 1,
-                            slidesPerView: 'auto',
-                            spaceBetween: 20,
-                        },
-                        1025: {
                             slidesPerView: 2,
+                            slidesPerView: 'auto',
                             spaceBetween: 20,
+                        },
+                    //     1025: {
+                    //         slidesPerView: 2,
+                    //         spaceBetween: 20,
                             
-                        },
-                        1441: {
-                            slidesPerView: 3,
-                            spaceBetween: 20,
+                    //     },
+                    //     1441: {
+                    //         slidesPerView: 3,
+                    //         spaceBetween: 20,
                             
-                        },
-                        1601: {
-                            slidesPerView: 3,
-                            spaceBetween: 20,
-                        },
+                    //     },
+                    //     1601: {
+                    //         slidesPerView: 3,
+                    //         spaceBetween: 20,
+                    //     },
                     },
                 });
             }
         });
-        // if ( $(window).width() < 769 || window.matchMedia('screen and (max-width: 768x)').matches ){
+        if ( $(window).width() < 769 || window.matchMedia('screen and (max-width: 768x)').matches ){
             
-        // }else{
-        //     $( elem ).each(function(){
-        //         if( $(this).hasClass('swiper-initialized') ){
-        //             this.swiper.destroy(true, true);
-        //         }
-        //         sliderClassRemove( $(this) );
-        //     });
-        // }
+        }else{
+            $( elem ).each(function(){
+                if( $(this).hasClass('swiper-initialized') ){
+                    this.swiper.destroy(true, true);
+                }
+                sliderClassRemove( $(this) );
+            });
+        }
     }
     
 };

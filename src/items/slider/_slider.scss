@@ -9,6 +9,8 @@
         }
     }
     &__arrow{
+        display: none;
+        
         position: absolute;
         top: 0;
 
@@ -46,18 +48,21 @@
         align-items: stretch;
     }
 }
+@media all and (max-width: map-get($grid-breakpoints, 'xl')){
+    .slider{
+        &__grid{
+            &:not(.swiper-wrapper){
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+}
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){
     .slider{
         &__slide{
             &.swiper-slide{
                 width: 390px;
             }
-            // &.swiper-slide-active{
-            //     width: auto!important;
-            // }
-            // &.swiper-slide-prev{
-            //     justify-content: flex-end;
-            // }
         }
         &__arrow{
             display: none;

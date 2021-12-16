@@ -10,6 +10,8 @@
         color: $green1;
         font-size: 64px;
         font-weight: $font-weight-bold;
+
+        white-space: nowrap;
     }
     &__link{
         font-weight: $font-weight-bold;
@@ -108,12 +110,20 @@
         height: 8px;
     }
 }
-// < 1024px
-@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+// < 1440px
+@media all and (max-width: map-get($grid-breakpoints, 'xl')){
     .calculator{
         &__title{
             font-size: map-get($map: $font-size, $key: md);
         }
+        &__num{
+            font-size: 52px;
+        }
+    }
+}
+// < 1024px
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .calculator{
         &__num{
             font-size: map-get($map: $heading, $key: h2);
         }

@@ -15,9 +15,15 @@ $(function() {
     let startValueRub = Math.round(startValue*100000);
     $("#incomingData").text( (new Intl.NumberFormat("ru-RU", { useGrouping: true, minimumFractionDigits: 0 })).format(Number(startValueRub)) );
 
+    // console.log( startValueRub );
+
     let refundStart = Math.round( (startValueRub*13)/100 );
     if( refundStart > 42000 ){
-        refundStart = 42000;
+        if( startValueRub >= 400000){
+            refundStart = 52000;
+        }else{
+            refundStart = 42000;
+        }
     }
     $("#refundData").text( (new Intl.NumberFormat("ru-RU", { useGrouping: true, minimumFractionDigits: 0 })).format(Number(refundStart)) );
 
@@ -36,9 +42,15 @@ $(function() {
                 let valueConv = (new Intl.NumberFormat("ru-RU", { useGrouping: true, minimumFractionDigits: 0 })).format(Number(value));
                 $("#incomingData").text(valueConv);
                 
+                console.log(value);
+
                 let refund = Math.round( (value*13)/100 );
                 if( refund > 42000 ){
-                    refund = 42000;
+                    if( value >= 400000){
+                        refund = 52000;
+                    }else{
+                        refund = 42000;
+                    }
                 }
                 let refundConv = (new Intl.NumberFormat("ru-RU", { useGrouping: true, minimumFractionDigits: 0 })).format(Number(refund));
                 $("#refundData").text(refundConv);

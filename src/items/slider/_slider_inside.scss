@@ -1,6 +1,6 @@
 .slider_inside{
-    padding-top: 2*map-get($map: $spacers, $key: 3);
-    transform: translateY(-48px);
+    padding-top: map-get($map: $spacers, $key: 2);
+    // transform: translateY(-60px);
 
     &.swiper-initialized{
         overflow: visible;
@@ -9,7 +9,7 @@
 // < 576px
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .slider_inside{
-        padding-top: map-get($map: $spacers, $key: 2);
-        transform: translateY(0);
+        padding-top: map-get($map: $spacers, $key: 1);
+        // transform: translateY(0);
     }
 }
