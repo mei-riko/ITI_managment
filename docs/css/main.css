@@ -117,6 +117,12 @@
   color: #ffffff;
 }
 
+@media all and (max-width: 768px) {
+  .btn_action {
+    padding: 20px 35px 18px;
+  }
+}
+
 @media all and (max-width: 375px) {
   .btn_action {
     padding: 16px 40px;
@@ -1623,13 +1629,14 @@
   padding-bottom: 90px;
 }
 
+.content_titulary__container {
+  position: relative;
+}
+
 .content_titulary__animation {
   position: absolute;
-  bottom: 0;
-  right: 0;
-  -webkit-transform: translate(50%, 50%);
-  -ms-transform: translate(50%, 50%);
-  transform: translate(50%, 50%);
+  top: -320px;
+  left: 500px;
 }
 
 .content_titulary__animation-svg {
@@ -1776,9 +1783,13 @@
 }
 
 @media all and (max-width: 1440px) {
+  .content_titulary__animation {
+    top: -260px;
+    left: 360px;
+  }
   .content_titulary__animation-svg {
-    width: 1240px;
-    height: 1240px;
+    width: 1200px;
+    height: 1200px;
   }
 }
 
@@ -1786,9 +1797,13 @@
   .content_titulary {
     overflow: hidden;
   }
+  .content_titulary__animation {
+    top: -200px;
+    left: 300px;
+  }
   .content_titulary__animation-svg {
-    width: 1050px;
-    height: 1050px;
+    width: 1020px;
+    height: 1020px;
   }
   .content_titulary__image, .content_titulary__image-inside {
     width: 360px;
@@ -1804,6 +1819,14 @@
 }
 
 @media all and (max-width: 768px) {
+  .content_titulary__animation {
+    top: -60px;
+    left: 250px;
+  }
+  .content_titulary__animation-svg {
+    width: 820px;
+    height: 820px;
+  }
   .content_titulary__image {
     max-width: 100%;
     margin-left: 0;
@@ -1821,7 +1844,18 @@
 @media all and (max-width: 576px) {
   .content_titulary {
     padding-top: 32px;
+    padding-bottom: 0;
+  }
+  .content_titulary__container {
     padding-bottom: 340px;
+  }
+  .content_titulary__animation {
+    top: auto;
+    left: -80px;
+    bottom: 0;
+    -webkit-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
   }
   .content_titulary__animation-svg {
     width: 840px;
@@ -1835,6 +1869,16 @@
     margin-right: auto;
     width: 260px;
     max-height: 260px;
+  }
+}
+
+@media all and (max-width: 375px) {
+  .content_titulary__animation {
+    left: -80px;
+  }
+  .content_titulary__animation-svg {
+    width: 720px;
+    height: 720px;
   }
 }
 

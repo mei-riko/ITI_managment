@@ -11,7 +11,11 @@
         color: $white;
     }
 }
-
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .btn_action{
+        padding: 20px 35px 18px;
+    }
+}
 @media all and (max-width: map-get($grid-breakpoints, 'xs')){
     .btn_action{
         padding: 16px 40px;
