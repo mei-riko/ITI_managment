@@ -8,7 +8,8 @@
     }
     &__num{
         color: $green1;
-        font-size: 64px;
+        font-size: 58px;
+        line-height: 64px;
         font-weight: $font-weight-bold;
 
         white-space: nowrap;
@@ -22,6 +23,8 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         margin-top: map-get($map: $spacers, $key: 2);
+
+        
     }
     &__return{
         position: relative;
@@ -30,6 +33,10 @@
         display: flex;
         justify-content: flex-end;
         align-items: center;
+
+        &_no-return{
+            align-items: flex-end;
+        }
     }
 
     // Modal

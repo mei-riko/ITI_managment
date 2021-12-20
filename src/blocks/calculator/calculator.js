@@ -36,13 +36,14 @@ $(function() {
             range: "min",
             value: startValue,
             min: minValue,
+            step: 0.5,
             max: maxValue,
             slide : function(event, ui) {
                 let value = Math.round(ui.value*100000);
                 let valueConv = (new Intl.NumberFormat("ru-RU", { useGrouping: true, minimumFractionDigits: 0 })).format(Number(value));
                 $("#incomingData").text(valueConv);
                 
-                console.log(value);
+                // console.log(value);
 
                 let refund = Math.round( (value*13)/100 );
                 if( refund > 42000 ){

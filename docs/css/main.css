@@ -2144,7 +2144,8 @@
 
 .calculator__num {
   color: #00C172;
-  font-size: 64px;
+  font-size: 58px;
+  line-height: 64px;
   font-weight: 700;
   white-space: nowrap;
 }
@@ -2174,6 +2175,12 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.calculator__ready_no-return {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
 }
 
 .calculator__modal {
