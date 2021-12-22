@@ -379,6 +379,15 @@
   filter: opacity(0.4);
 }
 
+.item__content {
+  padding-bottom: 44px;
+}
+
+.item__label {
+  font-weight: 700;
+  color: #00C172;
+}
+
 @media all and (max-width: 576px) {
   .item {
     padding: 32px;
@@ -444,7 +453,7 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-top: 90px;
+  margin-top: 44px;
 }
 
 @media all and (max-width: 1024px) {
@@ -455,7 +464,7 @@
 
 @media all and (max-width: 576px) {
   .item_strategy__footer {
-    margin-top: 56px;
+    margin-top: 32px;
   }
 }
 

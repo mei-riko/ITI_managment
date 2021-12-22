@@ -26,7 +26,7 @@
 
         align-items: center;
 
-        margin-top: map-get($map: $spacers, $key: 4);
+        margin-top: map-get($map: $spacers, $key: 2);
     }
 }
 
@@ -38,7 +38,7 @@
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .item_strategy{
         &__footer{
-            margin-top: map-get($map: $spacers, $key: 3);
+            margin-top: map-get($map: $spacers, $key: 1);
         }
     }
 }

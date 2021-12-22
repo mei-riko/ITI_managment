@@ -74,6 +74,14 @@
             filter: opacity(.4);
         }
     }
+
+    &__content{
+        padding-bottom: map-get($map: $spacers, $key: 2);
+    }
+    &__label{
+        font-weight: $font-weight-bold;
+        color: $green1;
+    }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .item{

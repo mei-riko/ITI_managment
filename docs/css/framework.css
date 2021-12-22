@@ -1918,7 +1918,7 @@ html.hidden, body.hidden {
 .show-overlay {
   overflow: hidden;
   position: relative;
-  z-index: 99;
+  z-index: 101;
 }
 
 .show-overlay:after {
@@ -1931,11 +1931,12 @@ html.hidden, body.hidden {
   bottom: 0;
   background-color: #1A1A1A;
   opacity: .4;
+  z-index: 101;
 }
 
 .above-overlay {
   position: relative;
-  z-index: 101;
+  z-index: 121;
 }
 
 p {
@@ -2014,21 +2015,6 @@ table td {
 
 .text-black {
   color: #1A1A1A;
-}
-
-.overlay {
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: 89;
-  background: rgba(0, 0, 0, 0.4);
-}
-
-.overlay--disable {
-  position: inherit;
-  display: none;
 }
 
 .p-relative {

@@ -22,7 +22,7 @@ html,body {
 .show-overlay{
     overflow: hidden;
     position: relative;
-    z-index: 99;
+    z-index: 101;
 
     &:after{
         content: '';
@@ -36,11 +36,13 @@ html,body {
 
         background-color: $black;
         opacity: .4;
+
+        z-index: 101;
     }
 }
 .above-overlay{
     position: relative;
-    z-index: 101;
+    z-index: 121;
 }
 
 p {
@@ -98,21 +100,21 @@ table{
 .text-white{color: $white;}
 .text-black{color: $black;}
 
-.overlay{
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 89;
+// .overlay{
+//     position: fixed;
+//     left: 0;
+//     right: 0;
+//     top: 0;
+//     bottom: 0;
+//     z-index: 89;
 
-    background: rgba(0,0,0,.4);
+//     background: rgba(0,0,0,.4);
 
-    &--disable{
-        position: inherit;
-        display: none;
-    }
-}
+//     &--disable{
+//         position: inherit;
+//         display: none;
+//     }
+// }
 
 .p-relative {position: relative;}
 .p-sticky   {position: sticky; top: 0; left: 0; z-index: 101;}
