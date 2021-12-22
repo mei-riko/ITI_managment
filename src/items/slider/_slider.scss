@@ -52,7 +52,8 @@
     .slider{
         &__grid{
             &:not(.swiper-wrapper){
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: repeat(2, calc(50% - 10px));
+                // grid-template-columns: repeat(2, 1fr);
             }
         }
     }
