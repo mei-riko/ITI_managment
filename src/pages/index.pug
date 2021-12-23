@@ -4,7 +4,7 @@ block variables
     - var pageTitle = "Index Page"
     link(rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css")
 block content
-    section.content.content_titulary
+    section.content.content_titulary.bg-lightest-grey
         .container.content_titulary__container
             .row.align-items-center.align-items-md-start.flex-md-column-reverse
                 .col-6.col-lg-8.col-md-8.col-sm-12 
@@ -45,7 +45,7 @@ block content
                 </svg>
     .bg-light-grey
         include ../items/slider/slider.pug
-    section.content.content_strategy
+    section.content.content_strategy#strategy
         .container 
             .row.justify-content-between.flex-md-column-reverse.align-items-center
                 .col-9.col-xl-7.col-lg-8.col-md-10.col-sm-12

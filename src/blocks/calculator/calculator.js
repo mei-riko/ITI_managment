@@ -27,9 +27,14 @@ $(function() {
     }
     $("#refundData").text( (new Intl.NumberFormat("ru-RU", { useGrouping: true, minimumFractionDigits: 0 })).format(Number(refundStart)) );
 
-    let yeildStart = Math.round( (startValueRub*(1 + percent*period/100) + refundStart*period) );
-    $("#yieldData").text( (new Intl.NumberFormat("ru-RU", { useGrouping: true, minimumFractionDigits: 0 })).format(Number(yeildStart)) );
+    // let yeildStart = Math.round( (startValueRub*(1 + percent*period/100) + refundStart*period) );
+    let yeildStart = Math.round( startValueRub*( Math.pow( (1+ percent/100), period ) ) + refundStart);
+    
+    // console.log( 'сумма инвестиции: ' + startValueRub);
+    // console.log( 'возврат от государства: ' + refundStart);
+    // console.log( 'сложный процент: ' + Math.pow( (1+ percent/100), period ) );
 
+    $("#yieldData").text( (new Intl.NumberFormat("ru-RU", { useGrouping: true, minimumFractionDigits: 0 })).format(Number(yeildStart)) );
 
     if( $("#calculatorSlider").length > 0 ){
         $("#calculatorSlider").slider({
@@ -56,7 +61,9 @@ $(function() {
                 let refundConv = (new Intl.NumberFormat("ru-RU", { useGrouping: true, minimumFractionDigits: 0 })).format(Number(refund));
                 $("#refundData").text(refundConv);
 
-                let result = Math.round( (value*(1 + percent*period/100) + refund*period) );
+                // let result = Math.round( (value*(1 + percent*period/100) + refund*period) );
+                let result = Math.round( value*( Math.pow( (1+ percent/100), period ) ) + refund);
+                // let result = 0;
                 let resultConv = (new Intl.NumberFormat("ru-RU", { useGrouping: true, minimumFractionDigits: 0 })).format(Number(result));
                 $("#yieldData").text(resultConv);
             }
