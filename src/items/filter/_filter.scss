@@ -1,0 +1,85 @@
+.filter{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+
+    position: relative;
+    z-index: 101;
+
+    max-width: 100%;
+    padding-bottom: $spacer-gutter;
+    overflow: auto;
+
+    &_with-slider{
+        max-width: calc( 100% - 108px);
+    }
+    
+    &__item{
+        padding: $spacer-gutter 2*$spacer-gutter;
+        border: 2px solid $black;
+        border-radius: 40px;
+        line-height: 20px;
+
+        margin-right: $spacer-gutter;
+        cursor: pointer;
+        transition: $transition-base;
+
+        &:hover{
+            border-color: $green1;
+            color: $green1;
+        }
+
+        &--active{
+            border-color: $green1;
+            background: $green1;
+            color: $white;
+
+            &:hover{
+                color: $white;
+            }
+        }
+
+        &_inside{
+            font-size: map-get($map: $font-size, $key: lg);
+            font-weight: $font-weight-bold;
+            filter: opacity(.6);
+
+            white-space: nowrap;
+    
+            margin-right: map-get($map: $spacers, $key: 3);
+    
+            border-radius: 0;
+            border: none;
+            border-bottom: 4px solid rgba(255,255,255,0);
+    
+            padding: $spacer 0;
+            
+            &:hover{
+                border-color: $white;
+                filter: opacity(1);
+            }
+
+            &--active{
+                color: $black;
+                background: inherit;
+                border-color: $green1;
+                filter: opacity(1);
+
+                &:hover{
+                    color: $black;
+                    border-color: $green1;
+                }
+            }
+        }    
+    }
+}
+
+input:checked + label{
+    border-color: $green1;
+    background: $green1;
+    color: $white;
+
+    &:hover{
+        color: $white;
+    }
+}

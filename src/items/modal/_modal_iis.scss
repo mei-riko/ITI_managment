@@ -1,0 +1,29 @@
+.modal_iis{
+    display: none;
+
+    border: 1px solid $green1;
+    border-radius: $border-radius;
+    background: $green1;
+    color: $white;
+    padding: 2*$spacer-gutter map-get($map: $spacers, $key: 1);
+
+    width: 360px;
+    max-width: 100%;
+
+    &.fancybox__content{
+        background: $green1;
+        color: $white;
+        padding: 2*$spacer-gutter map-get($map: $spacers, $key: 1);
+    }
+
+    &__title{
+        margin-bottom: $spacer-gutter;
+    }    
+    &__label{
+        color: $white;
+        filter: opacity(.75);
+        text-transform: uppercase;
+        margin-bottom: map-get($map: $spacers, $key: 1);
+        font-size: map-get($map: $font-size, $key: xs);
+    }
+}

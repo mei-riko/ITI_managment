@@ -18,7 +18,10 @@ mixin item(image, title, subtitle, percent, period, content, info)
                     .item__stats-title=period
                     .item__stats-offer Срок вложений
             .item__content=content
-            .item__label=info
+            if info
+                .item__label
+                    .item__label-modal ИИС
+                    .item__label-content=info
         .item_strategy__footer
             .item__risk 
                 svg.item__risk-icon(width="76" height="13" viewBox="0 0 76 13" fill="none" xmlns="http://www.w3.org/2000/svg")

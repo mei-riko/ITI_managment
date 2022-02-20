@@ -27,6 +27,9 @@
     &--error{
         border-color: $red;
     }
+    &--full{
+        width: 100%;
+    }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'xs')){
     .input{
