@@ -12,11 +12,11 @@ mixin item(image, title, subtitle, percent, period, content, info)
                     img.img-fluid.item_strategy__icon(src=image)
             .item__stats
                 .item__stats-item
-                    .item__stats-title=percent
-                    .item__stats-offer Годовых в рублях
-                .item__stats-item
                     .item__stats-title=period
                     .item__stats-offer Срок вложений
+                .item__stats-item
+                    .item__stats-title=percent
+                    .item__stats-offer Годовых в рублях
             .item__content=content
             if info
                 .item__label
